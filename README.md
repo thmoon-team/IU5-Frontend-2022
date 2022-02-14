@@ -1,5 +1,5 @@
 # Ссылка на ведомость:
-https://docs.google.com/spreadsheets/d/1tI8__eRI9CBqyhxoyPkDUAurpd6_ZULPNyoh3VOmoTg/edit?usp=sharing
+https://docs.google.com/spreadsheets/d/1T4Mej5iusrNk-PP7XRpU794Gsp-Z0Nsfubu-YRCOlOk/edit?usp=sharing
 
 # Флоу работы с git
 1. Делаем fork репозитория
