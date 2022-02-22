@@ -268,8 +268,13 @@ article {
 }
 
 @media only screen and (max-width: 900px) {
+    .articles {
+        margin: 20vmin 0 0 0;
+    }
     article {
-        width: 100vw;
+        max-width: 100vw !important;
+        width: 100vw !important;
+        margin: 0;
     }
     .card > p > img {
         /* margin: 0; */
