@@ -1,0 +1,427 @@
+body {
+    background-color:rgb(255, 255, 255);
+    margin: 0; 
+}
+
+header{
+    display:flex;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background: #000000;
+    height:fit-content; 
+    box-shadow: 0 0 30px;
+    position:relative;
+}
+
+.box1 { 
+    text-align: right;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    width: 300px;
+   }
+
+.box1 p{
+    margin: 0px;
+    padding: 0px;
+    color: white; 
+    font-family: Century Gothic;
+}
+
+
+a#knopka {
+    margin: 25px 10px 25px 10px;
+    padding: 0px 0px 0px 0px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-family: Century Gothic;
+    font-weight: 100;
+    transition: .3s ease-in-out;
+
+    background-image: linear-gradient(#f31eac 50%, #f31eac 50%), linear-gradient(silver 50%, silver 50%);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 0 2px, 80% 2px;
+    color: #00d9ff;
+    padding-bottom: 3px;
+    transition: .5s ease-in-out;
+}
+a#knopka:hover {
+    background-size: 100% 2px, 100% 2px;
+    color:#f31eac;
+ }
+
+
+ #style3{
+     display: inline-block;
+    margin: 0px 0px 0px 0px;
+    font-family: Century Gothic;
+    font-size: 15px;
+    color: #afafaf; 
+ }
+
+ a#connect{
+    display:inline-block;
+    margin: 25px 8px 0px 0px;
+    transition: .3s ease-in-out;
+ }
+ a#connect:hover {
+    transform: scaleX(1.1);
+ }
+
+
+ a#knopka2 {
+    text-decoration: none;
+    display:inline-block;
+    padding: 0px 0px;
+    letter-spacing: 1px;
+    margin: 25px 2px 0px 0px;
+    font-family: Century Gothic;
+    font-weight: 100;
+    transition: .3s ease-in-out;
+    color: #afafaf;
+
+}
+a#knopka2:hover {
+    transform: scaleX(1.1);
+ }
+
+.head{
+    position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+    display: flex;
+    background-color: #7a7a7a;
+    box-shadow: 0 0 10px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+a#head_but{
+    margin: 12px 0px 0px 10px;
+    transition: .2s ease-in-out;
+}
+
+a#head_but:hover {
+    transform: scaleX(1.05);
+    color:white;
+}
+
+#head_but p{
+    text-decoration: none;
+    display:inline-block;
+    color:#d4cfcf;
+    font-family: Century Gothic;
+    margin: 5px 0px 0px 30px;
+}
+
+#head_but p:hover{
+    color:rgb(255, 255, 255);
+}
+
+* {box-sizing: border-box;}
+.search {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  height: 42px;
+}
+.search input {
+    color: #d4cfcf;
+    font-family: Century Gothic;
+  height: 42px;
+  width: 0;
+  padding: 0 50px 0 15px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  background: transparent;
+  transition: .4s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.search input:focus {
+  width: 300px;
+  z-index: 1;
+  border-bottom: 2px solid #F9F0DA;
+}
+.search input::-moz-placeholder {
+    color: #d4cfcf;
+    font-family: Century Gothic;}
+.search input::-webkit-input-placeholder {
+     color: #d4cfcf;
+    font-family: Century Gothic;}
+
+.search button {
+    color:#d4cfcf;
+    background: transparent;
+  border: none;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+.search button:hover{
+    color:rgb(255, 255, 255);
+    transform: scaleX(1.1);
+}
+
+.box_body{
+    box-shadow: inset 0 0 15px;
+    background-color: #e2e2e2;
+    height:fit-content;
+    width:90%;
+    padding: 2%;
+    margin:auto;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.box_body h1{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color:#000000;
+    font-size: 60px;
+    font-family: Century Gothic;
+    font-weight: 900;
+}
+.box_body h1 a{
+    color:#000000;
+    text-decoration: none;
+}
+
+
+.box_body p{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color:#000000;
+    font-size: 30px;
+    font-family: Century Gothic;
+    font-weight: 100;
+
+}
+.box_body img{
+    border-radius: 5px;
+    margin: 10px;
+    transition: .3s ease-in-out;
+}
+
+.section {
+    padding: 5px;
+    margin-left: 70px;
+    margin-right: 70px;
+    white-space: nowrap;
+    overflow-x: auto;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x;
+}
+
+#body__img {
+    margin: 0px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: .3s ease-in-out;
+  }
+
+
+  #body__img:hover{
+    transform: scaleX(1.01);
+    box-shadow: 0 0 10px;
+  }
+
+  .box_in_box_body{
+    box-shadow: 0 0 20px;
+      display:flex;
+    background-color:#ffffff;
+    height:fit-content;
+    width:90%;
+    padding: 10px 10px;
+    margin:auto;
+    margin-top: 15px;
+    margin-bottom: 10%;
+    border-radius: 10px;
+  }
+
+
+
+  .table {
+    margin-top: 5%;
+    margin-left: 20%;
+	border: none;
+	margin-bottom: 20px;
+}
+
+.table thead th {
+    font-family: Century Gothic;
+	font-weight: bold;
+	text-align: left;
+	border: none;
+	padding: 10px 15px;
+	background: #d8d8d8;
+	font-size: 14px;
+}
+.table thead tr th:first-child {
+    width:150px;
+	border-radius: 8px 0 0 8px;
+}
+.table thead tr th:last-child {
+    width:400px;
+	border-radius: 0 8px 8px 0;
+}
+.table tbody td {
+    font-family: Century Gothic;
+	text-align:center;
+	border: none;
+	padding: 10px 15px;
+	font-size: 14px;
+	vertical-align: top;
+}
+.table tbody tr:nth-child(even){
+	background: #f3f3f3;
+}
+.table tbody tr td:first-child {
+	border-radius: 8px 0 0 8px;
+}
+.table tbody tr td:last-child {
+	border-radius: 0 8px 8px 0;
+}
+
+#text_table{
+    margin-top: 5%;
+    margin-left: 20%;
+    text-align: center;
+    width: 100%;
+    color:black;
+    font-size: 30px;
+    font-family: Century Gothic;
+    font-weight: 100;
+}
+
+.box__tabl{
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    height: fit-content;
+}
+
+select {
+    font-family: Century Gothic;
+    width:150px;
+    height: 35px;
+    padding: 4px;
+    border-radius:4px;
+    background: #eee;
+    border: none;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    }
+
+label {
+    font-family: Century Gothic;
+    position: relative;
+    }
+    label:after {
+        content:'<>';
+        font: 11px "Consolas", monospace;
+        color: #666;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        right: 8px; 
+        top:2px;
+        padding: 0 0 2px;
+        border-bottom: 1px solid #ddd;
+        position: absolute;
+        pointer-events: none;
+        }
+        label:before {
+        content: '';
+        right: 6px; 
+        top:0px;
+        width: 20px; 
+        height: 20px;
+        background: #eee;
+        position: absolute;
+        pointer-events: none;
+        display: block;
+        }
+
+#text_select{
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    text-align: left;
+    width: 100%;
+    color:#000000;
+    font-size: 20px;
+    font-family: Century Gothic;
+    font-weight: 100;
+}
+#text_select_2{
+    display: inline;
+    margin-top: 50px;
+    margin-left: 8%;
+    text-align: left;
+    width: 100%;
+    color:#000000;
+    font-size: 15px;
+    font-family: Century Gothic;
+    font-weight: 100;
+}
+#text_price{
+    text-align: right;
+    width: 100%;
+    color:#000000;
+    font-size: 30px;
+    font-family: Century Gothic;
+    font-weight: 900;
+}
+
+#buy {
+    margin-left: 80%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    font-family: Century Gothic;
+    border-radius: 30px;
+    background-color: #1f5bff;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size:12pt;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    background-color: white; 
+    color: black; 
+    border: 2px solid #1f5bff;
+}
+
+#buy:hover {
+    background-color: #1f5bff;
+    color: white;
+}
+
+
+#text_endr {
+    color:#b4b4b4;
+    font-family: Century Gothic;
+    font-size: 75%;
+}
