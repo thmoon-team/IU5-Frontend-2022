@@ -1,11 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='style1.css'>
+        <title>Кинчез</title>
     </head>
-
-    <body></body>
+    <body>
+		<div id="title1">Выбор лучшего кинчеза<sup>1</sup> 2021</div>
+        <table>
+            <tr>
+                <td><span class="cinema_name">Человек паук: нет пути домой</span></td>
+                <td><span class="cinema_name">Главный герой</span></td>
+                <td><span class="cinema_name">Круэлла</span></td>
+                <td><span class="cinema_name">Кингсмен: начало</span></td>
+                <td><span class="cinema_name">Отряд самоубийц: миссия навылет</span></td>
+            </tr>
+            <tr>
+                <td><img src ="img/Spider-Man_—_No_Way_Home_poster.jpg" class="poster"></td>
+                <td><img src ="img/103511.jpg" class="poster"></td>
+                <td><img src ="img/cruella.jpg" class="poster"></td>
+                <td><img src ="img/kingsman.jpg" class="poster"></td>
+                <td><img src ="img/suicide-squad.jpg" class="poster"></td>
+                
+            </tr>
+            <tr>
+                <td><a href="https://www.kinopoisk.ru/film/1309570/">Кинопоиск:</a> <span class="greenrate">8.2</span><br><a href="https://www.imdb.com/title/tt10872600/">IMDb:</a> <span class="greenrate">8.7</span></td>
+                <td><a href="https://www.kinopoisk.ru/film/1199100/">Кинопоиск:</a> <span class="greenrate">7.4</span><br><a href="https://www.imdb.com/title/tt6264654/">IMDb:</a> <span class="greenrate">7.2</span></td>
+                <td><a href="https://www.kinopoisk.ru/film/804662/">Кинопоиск:</a> <span class="greenrate">7.5</span><br><a href="https://www.imdb.com/title/tt3228774/">IMDb:</a> <span class="greenrate">7.4</span></td>
+                <td><a href="https://www.kinopoisk.ru/film/1045056/">Кинопоиск:</a> <span class="redrate">6.0</span><br><a href="https://www.imdb.com/title/tt6856242/"> IMDb:</a> <span class="yellowrate">6.5</span></td>
+                <td><a href="https://www.kinopoisk.ru/film/1008477/">Кинопоиск:</a> <span class="yellowrate">6.7</span><br><a href="https://www.imdb.com/title/tt6334354/">IMDb:</a> <span class="greenrate">7.2</span></td>
+                
+            </tr>
+            <tr>
+                <td><span class="desc_h">Страна: </span>CША</td>
+                <td><span class="desc_h">Страна: </span>CША</td>
+                <td><span class="desc_h">Страна: </span>CША</td>
+                <td><span class="desc_h">Страна: </span>Великобритания, CША</td>
+                <td><span class="desc_h">Страна: </span>CША</td>
+            </tr>
+            <tr>
+                <td><span class="desc_h">Режиссер: </span>Джон Уотс</td>
+                <td><span class="desc_h">Режиссер: </span>Шон Леви</td>
+                <td><span class="desc_h">Режиссер: </span>Крэйг Гиллеспи</td>
+                <td><span class="desc_h">Режиссер: </span>Мэттью Вон</td>
+                <td><span class="desc_h">Режиссер: </span>Джеймс Ганн</td>
+            </tr>
+            <tr>
+                <td><span class="desc_h">Актеры:</span><br>Том Холланд<br>Зендея<br>Бенедикт Камбербэтч</td>
+                <td><span class="desc_h">Актеры:</span><br>Райан Рейнольдс<br>Джоди Комер<br>Лил Рел Ховери</td>
+                <td><span class="desc_h">Актеры:</span><br>Эмма Стоун<br>Эмма Томпсон<br>Джоэль Фрай</td>
+                <td><span class="desc_h">Актеры:</span><br>Рэйф Файнс<br>Харрис Дикинсон<br>Джимон Хонсу</td>
+                <td><span class="desc_h">Актеры:</span><br>Идрис Эльба<br>Марго Робби<br>Джон Сина</td>
+            </tr>
+        </table>
+        <form class="form1">
+            Проголосуйте за лучший кинчез<sup>1</sup> 2021
+            <br>
+            <input type="text" id="name" name="student_name" placeholder="Имя" style="margin-left:0px;">
+            
+            <input type="text" id="surname" name="student_surname" placeholder="Фамилия">
+            
+            <input type="text" id="name" name="student_name" placeholder="Имя">
+            <br>
+            <label for="courses">кинчез<sub>кинчик</sub> :</label>
+            <select id="cinemas" name="cinema_names">
+                <option value="spider_man">Человек паук: нет пути домой</option>
+                <option value="free_guy">Главный герой</option>
+                <option value="cruella">Круэлла</option>
+                <option value="kingsman">Кингсмен: начало</option>
+                <option value="suicide_squad">Отряд самоубийц: миссия навылет</option>
+            </select>
+            <button>Отправить</button>
+            <hr>
+            <div id="descr">
+            1 - кино<br>
+            ©sasha_zaitsevcomp <br>All rights reserved.<br>
+            </div>
+        </form>
+        
+    </body>
 </html>
+
