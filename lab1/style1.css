@@ -124,3 +124,13 @@ button {
     font-weight: bold;
     color: rgb(252, 146, 30);
     }
+button:hover{
+    color:#fff;
+    background-color:rgb(252, 146, 30);
+    border-color: rgb(252, 146, 30);
+}
+button:active{
+    color:#fff;
+    background-color:rgb(226, 117, 0);
+    border-color: rgb(226, 117, 0);
+}
