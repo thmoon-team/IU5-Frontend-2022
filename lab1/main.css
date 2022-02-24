@@ -1,0 +1,344 @@
+:root {
+    --accent: #007fce;
+    --link: #009dff;
+    --bacground: #201f2b;
+    --fontclr: #eee;
+    --fontclrscnd: #333;
+    --second: #fff;
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--fontclr);
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    font-style: italic;
+    color: var(--link);
+    text-decoration: none;
+}
+
+label {
+    color: var(--fontclrscnd);
+}
+
+form input[type="submit"] {
+        border: none;
+        border-radius: 1vmin;
+        background: var(--accent);
+        color: var(--second);
+        font-size: 4vmin;
+        line-height: 4vmin;
+        padding: 1vmin;
+        cursor: pointer;
+        transition: background-color .3s;
+}
+
+form input[type="submit"]:active {
+    background-color: var(--link);
+    transition: background-color 0s;
+}
+
+::selection{
+    background-color: transparent;
+}
+
+i {
+    color: var(--bacground);
+}
+
+table {
+    box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+    width: calc(100% - 8vmin);
+    margin: 4vmin;
+    table-layout: fixed;
+    border-collapse: collapse;
+} 
+
+table th, table td {
+    width: 34%;
+    padding: 1vmin;
+    text-align: left;
+}
+
+table thead {
+    border-radius: 1vmin;
+    z-index: 0;
+    font-size: 2vmin;
+    background-color: var(--bacground);
+    color: var(--second);
+}
+
+table thead tr {
+    display: block;
+    position: relative;
+}
+
+table tbody {
+    border-radius: 1vmin;
+    display: block;
+    overflow: auto;
+}
+
+table tbody tr:nth-child(even) td {
+    font-size: 2vmin;
+    background-color: var(--fontclrscnd);
+    color: var(--fontclr);
+}
+
+table tbody tr:nth-child(odd) td {
+    font-size: 2vmin;
+    color: var(--fontclrscnd);
+}
+
+header {
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    top: 0;
+    background: linear-gradient(180deg, var(--bacground) 80%,rgba(0,140,213,0));
+}
+
+header > ul {
+    margin-left: auto;
+    padding: 5.5vmin 0;
+    vertical-align: top;
+    display: inline-block;
+    list-style-type: none;
+}
+
+header > ul > li {
+    line-height: 4vmin;
+    font-size: 4vmin;
+    display: inline-block;
+    margin-left: 0; 
+    padding: 0 4vmin;
+}
+
+header > ul > li > a {
+    color: var(--fontclr);
+    font-style: normal;
+}
+
+.hellowrld {
+    height: 20vmin;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 5vmin;
+    padding: 4vmin 0 4vmin 4vmin;
+    line-height: 5vmin;
+}
+
+.hellowrld::after {
+    content: '🌍';
+}
+
+.hellowrld::before {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    position: absolute;
+    top: 9vmin;
+    content: 'click me ⤴';
+    font-size: 2vmin;
+    color: var(--fontclr);
+}
+
+.hellowrld > a {
+    font-style: normal;
+    color: var(--accent);
+    transition: .3s color;
+}
+
+.hellowrld > a:hover {
+    color: var(--link);
+    transition: .3s color;
+}
+
+.articles {
+    width: 100vw;
+    max-width: 1900px;
+    columns: 600px auto;
+    margin: 20vmin 0 0 0;
+}
+
+article {
+    break-inside: avoid-column;
+    overflow: hidden;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin: 2vmin auto;
+    width: 70vw;
+    max-width: 600px;
+}
+
+.card {
+    height: 100%;
+    border-radius: 1vmin;
+    background-color: var(--second);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.card > h2 {
+    padding: 4vmin;
+    font-size: 4vmin;
+    line-height: 4vmin;
+    color: var(--fontclrscnd);
+}
+
+.card > p {
+    padding: 4vmin;
+    text-align: left;
+    color: var(--fontclrscnd);
+    font-size: 2.5vmin;
+    line-height: 3vmin;
+}
+
+.card > p > img {
+    float:left;
+    margin: 0 2vmin 2vmin 0;
+    box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+    border-radius: 1vmin;
+}
+
+.card > form {
+    text-align: left;
+    padding: 4vmin;
+}
+
+.card > form p,div {
+    margin: 2vmin 0;
+    color: var(--fontclrscnd);
+    font-size: 2.5vmin;
+    line-height: 3vmin;
+}
+
+.card > form div {
+    padding: 2vmin;
+}
+
+.card > form div label {
+    margin: 2vmin 0;
+    color: var(--fontclrscnd);
+}
+
+.card > form div {
+    border: 1px solid #888;
+}
+
+.card > form div > label {
+    display: inline-block;
+    padding: 0 2vmin;
+}
+
+@media only screen and (max-width: 1300px) {
+    header > ul {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    
+    .burger {
+        margin-left: auto;
+        padding: 2vmin 4vmin;
+        vertical-align: top;
+        display: inline-block;
+        line-height: 8vmin;
+        color: var(--fontclr);
+        font-size: 8vmin;
+    }
+    .burger::after{
+        content: "✖️";
+        position: absolute;
+        transform: translate(-11vmin);
+        cursor: pointer;
+        transition: transform .3s ease-out;
+    }
+    .burger.active::after{
+        position: absolute;
+        transform: translate(-52vmin) rotate(45deg);
+        transition: transform .3s ease-out;
+    }
+
+}
+
+@media only screen and (max-width: 1850px) {
+    .articles {
+        width: 80vw;
+        columns: 600px auto;
+        margin: 20vmin auto 0 auto;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .articles {
+        margin: 20vmin 0 0 0;
+    }
+    article {
+        max-width: 100vw !important;
+        width: 100vw !important;
+        margin: 0;
+    }
+    .card > p > img {
+        /* margin: 0; */
+        float: none;
+        width: 100%;
+        margin: 0 0 4vmin 0;
+    }
+}
+
+.sidemenu {
+    z-index: 150;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0vmin;
+    right: 0;
+    height: 100%;
+    background: var(--bacground);
+    transition: .3s ease-out;
+}
+
+.sidemenu > ul {
+    margin-left: auto;
+    padding: 4vmin 0;
+    vertical-align: top;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.sidemenu > ul > li {
+    white-space: nowrap;
+    line-height: 4vmin;
+    color: var(--fontclr);
+    font-size: 4vmin;
+    margin-left: 0; 
+    padding: 4vmin 10vmin;
+}
+
+.sidemenu > ul > li > a {
+    color: var(--fontclr);
+    font-style: normal;
+}
+
+.sidemenu > ul > li:nth-child(1) {
+    padding: 0vmin 10vmin 4vmin 10vmin;
+}
+
+.sidemenu.active{
+    width: 42vmin;
+    opacity: 1;
+    transition: .3s ease-out;
+}
+
+@media only screen and (min-width: 1300px) {
+    .sidemenu {
+        width: 0 !important;
+        opacity: 0 !important;
+    }
+}

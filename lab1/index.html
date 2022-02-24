@@ -4,8 +4,151 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
+        <title>Лабораторная работа 1. Тимошкин Т.А.</title>
+        <link rel="stylesheet" href="main.css">
+        <script>
+            function toggleBurgerActive(){
+                document.querySelector('.burger').classList.toggle('active');
+                document.querySelector('.sidemenu').classList.toggle('active');
+            }
+            
 
-    <body></body>
+        </script>
+    </head>
+    <body style="background:darkgrey; text-align: center;">
+        <div class="sidemenu">
+            <ul>
+                <li id="btn_header_imgs"><a href="#imgs">🖼️ картинки</a></li>
+                <li id="btn_header_form"><a href="#form">📊 форма</li></a>
+                <li id="btn_header_table"><a href="#table">📄 таблица</li></a>
+            </ul>
+        </div>
+        <header>
+            <h1 class="hellowrld"><a href="https://www.youtube.com/watch?v=lpiB2wMc49g" target="_blank">Привет мир!</a></h1>
+            <ul>
+                <li id="btn_header_imgs"><a href="#imgs">🖼️&nbsp;картинки</a></li>
+                <li id="btn_header_form"><a href="#form">📊&nbsp;форма</li></a>
+                <li id="btn_header_table"><a href="#table">📄&nbsp;таблица</li></a>
+            </ul>
+            <div id="burger" class="burger" onclick="toggleBurgerActive()"></div>
+        </header>
+        <div class="articles">
+            <article>
+                <div class="card" id="imgs">
+                    <h2>Это достаточно адаптивная страничка! 🦕</h2>
+                    <hr>
+                    <p>
+                        <img src="https://cdn.discordapp.com/attachments/343146855372423168/945442988316848128/unknown.png" alt="">
+                        Это достигается благодаря комплексу решений. Но основной инструмент в данном случае <i>@media screen</i>. С его помощью можно задавать разные стили для элементов в зависимости от разрешения экрана. В нашем случае, если размер экрана 1300 пикселей или меньше, то будут применятся стили из скобок. Остается только следить за приоритетами и в редких случаях ставить <i>!important</i> 
+                    </p>
+                </div>
+            </article>
+            <article>
+                <div class="card">
+                    <h2>Долго ломал голову как сделать вывод статей в равные колонки 🤦</h2>
+                    <hr>
+                    <p>
+                        <img width="256px" src="https://cdn.discordapp.com/attachments/343146855372423168/945474681601941586/unknown.png" alt="">
+                        Сначала сделал через display flex, но блоки оставляли между собой вертикальное расстояние, которое я никак не смог убрать. Полез на <a href="codepen.io">Codepen.io</a> и немного порыскав отыскал решение! Такой тип вывода информации называется <i>css masonry</i>. Да, в это профессии всегда есть чему пооучиться, ну или лишний раз освежить память.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <div class="card">
+                    <h2>Тут есть меню "Бургер" 🍔</h2>
+                    <hr>
+                    <p>
+                        <img width="256px" src="https://cdn.discordapp.com/attachments/343146855372423168/945459501472047104/unknown.png" alt="">
+                        Пришлось чуть-чуть считерить и использовать <i>JS</i>. Ничего сложного, просто меняю стили соответствующих элементов по клику на плюсик. Вообще на этом этапе возникает вопрос - "зачем вообще он сюда пришел?". Ответ убил... <a href="#" onclick="{alert('Шутка!')}">Читать продолжение в источнике.</a>
+                    </p>
+                </div>
+            </article>    
+            <article id="form">
+                <div class="card">
+                    <h2>Форма по заказу 👍</h2>
+                    <hr>
+                    <form action="">
+                        <p> Тут можно выбрать цвет: <input type="color"></p>
+                        <div>
+                            А тут 2 радиобатона:
+                            <p><label><input name="somename" type="radio"> Опция 1</label></p>
+                            <p><label><input name="somename" type="radio"> Опция 2</label></p>
+                        </div>
+                        <p><label>Добавим чекбокс: <input type="checkbox"></label></p>
+                        <p><input type="submit" value="Выбрать"></p>
+                    </form>
+                </div>
+            </article>   
+            <article id="table">
+                <div class="card">
+                    <h2>Таблица с фруктами... 🍉</h2>
+                    <hr>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>Название фрукта</th>
+                            <th>Цвет</th>
+                            <th>Описание</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Яблоко</td>
+                            <td>Зеленое</td>
+                            <td>Но они бывают красные.</td>
+                          </tr>
+                          <tr>
+                            <td>Груша</td>
+                            <td>Зеленая</td>
+                            <td>Можно скушать.</td>
+                          </tr>
+                          <tr>
+                            <td>Виноград</td>
+                            <td>Зеленый</td>
+                            <td>Похоже на кишмиш.</td>
+                          </tr>
+                          <tr>
+                            <td>Апельсин</td>
+                            <td>Оранжевый</td>
+                            <td>Да, это точно он.</td>
+                          </tr>
+                          <tr>
+                            <td>Банан</td>
+                            <td>Желтый</td>
+                            <td>Люблю бананы.</td>
+                          </tr>
+                          <tr>
+                            <td>Киви</td>
+                            <td>Зеленый</td>
+                            <td>Еще он мохнатый.</td>
+                          </tr>
+                          <tr>
+                            <td>Слива</td>
+                            <td>Фиолетовая</td>
+                            <td>Спелая.</td>
+                          </tr>
+                          <tr>
+                            <td>Арбуз</td>
+                            <td>Зеленый</td>
+                            <td>В полосочку.</td>
+                          </tr>
+                          <tr>
+                            <td>Помидор</td>
+                            <td>Красный</td>
+                            <td>На веточке.</td>
+                          </tr>
+                          <tr>
+                            <td>Вишенка</td>
+                            <td>Красная</td>
+                            <td>Кислая.</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </article> 
+        </div>
+        <footer style="padding: 5vmin; font-size: 3vmin; line-height: 3vmin; background-color: rgb(54,54,54);">
+            © Copyright 2022 <a href="https://t.me/ttimoshkin" target="_blank">Timoshkin Timofey</a>
+        </footer>
+    </body>
 </html>
