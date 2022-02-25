@@ -1,0 +1,130 @@
+/*img {
+    background-color: #fff;
+} */
+
+div > div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+img.eye {
+    max-width: 20%;
+    height: auto;
+}
+
+#left-eye {
+    transform: scaleX(-1);
+    filter: saturate(300%) contrast(300%);
+}
+
+#right-eye {
+    margin-left: 10%;
+    filter: saturate(300%) contrast(300%) hue-rotate(180deg);
+}
+
+#nose {
+    max-width: 15%;
+    height: auto;
+    filter: saturate(200%) contrast(300%);
+    margin-right: 10%;
+}
+
+div.face {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+/*div.lower-face {
+    width: 80%;
+    margin-left: 64px;
+}*/
+
+#upper-lip {
+    width: 50%;
+    max-height: 30%;
+    transform: scaleY(0.3);
+    margin: -5% 0% -10%;
+    filter: saturate(200%) contrast(200%);
+    position: relative;
+    z-index: 1;
+}
+
+#lower-lip {
+    width: 50%;
+    max-height: 30%;
+    transform: scaleY(0.5) scaleX(1.2);
+    margin: -29% 0% -10%;
+    filter: saturate(200%) contrast(200%);
+    position: relative;
+    z-index: 1;
+}
+
+#nose::after {
+    content: "\a";
+    white-space: pre;
+}
+
+table.teeth {
+    width: 70%;
+    z-index: 2;
+}
+
+#upper-tooth {
+    max-width: 3%;
+    height: auto;
+    transform: scaleY(-1);
+    position: relative;
+    z-index: inherit;
+}
+
+#lower-tooth {
+    max-width: 3%;
+    height: auto;
+    position: relative;
+    z-index: inherit;
+}
+
+input.button, a.button {
+    font: bold 1.2em "Segoe Script";
+    color: #d00;
+    background-color: #111;
+}
+
+a.button::after {
+    content: " .";
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    padding: 1px 7px 1px;
+    border-top: 2px solid #777;
+    border-left: 2px solid #777;
+    border-bottom: 2px solid #222;
+    border-right: 2px solid #222;
+
+}
+
+input.button:hover, a.button:hover {
+    color: rgba(255, 0, 33, 1);
+    background-color: #000;
+}
+
+span, label {
+    font: bold 20px "Segoe Script";
+    color: red;
+}
+
+sup {
+    font: bold 1.4em "Segoe Script";
+    color: #d00;
+}
+
+sub {
+    font: bold 0.7em "Segoe Script";
+    color: #d00;
+}
