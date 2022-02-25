@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
 
-    <body></body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+		<title>Just a page</title>
+	</head>
+
+	<body>
+		<h1>Hello there!</h1>
+		<div class="noteblock">This page is an example of a pure <a href="https://en.wikipedia.org/wiki/Abstraction">abstraction</a>.
+			<br>And don't forget to drink H<sub>2</sub>O!</div>
+		<p>So, let's take a look at this beautiful squares:</p>
+		<table>
+			<caption align="bottom"><i>Squares</i></caption>
+			<tr>
+				<th>
+					<div class="headerbg">Square</div>
+				</th>
+				<th>
+					<div class="headerbg">Picture</div>
+				</th>
+			</tr>
+			<tr>
+				<td>Small green square</td>
+				<td><img class="squareimg" id="square1" src="img/square1.png" alt="Small green square :)"></td>
+			</tr>
+			<tr>
+				<td>Medium blue square</td>
+				<td><img class="squareimg" style="width: 50%;" src="img/square2.png" alt="Just medium blue square"></td>
+			</tr>
+			<tr>
+				<td>Big white square</td>
+				<td><img class="squareimg" src="img/square3.png" alt="Literally big white square"></td>
+			</tr>
+		</table>
+		<p>After that, please take part in a short survey:</p>
+		<div class="survey">
+			<form>
+				<label for="name">Name</label>
+				<input type="text" id="name" placeholder="Your name..">
+				<br>
+				<label for="opinion">Opinion</label>
+				<textarea id="opinion" rows="5" cols="50" placeholder="Tell us which square do you like the most and why.."></textarea>
+				<br>
+				<label for="gender">Gender</label>
+				<select id="gender">
+					<option>Male</option>
+					<option>Female</option>
+					<option>Attack helicopter</option>
+				</select>
+				<br>
+				<input type="checkbox" id="checkbox">
+				<label for="checkbox">I support the invasion of Ukraine<sup>1</sup></label>
+				<br>
+				<button>Submit</button>
+				<hr>
+				<p id="note"> 1 - Love and peace to Ukraine &lt;3.
+					<p>
+			</form>
+		</div>
+	</body>
+
 </html>
