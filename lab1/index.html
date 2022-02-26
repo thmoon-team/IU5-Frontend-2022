@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Лабораторная работа №1</title>
+        <link rel="stylesheet" href="./styles.css"></style>
     </head>
+    <body>
+        <section>
+            <div class="container">
+                <h1>Поисковые системы</h1>
 
-    <body></body>
+                <div class="container__card">
+                    <div class="card__item">
+                        <a href="https://www.google.com/"></a>
+                            <img src="../assets/images/google.png" alt="google">
+                        </a>
+                        <div class="card__text" style="color: blue">
+                            Google
+                        </div>
+                    </div>
+                    <div class="card__item">
+                        <a href="https://www.yandex.com/"></a>
+                            <img src="../assets/images/yandex.png" alt="yandex">
+                        </a>
+                        <div class="card__text" style="color: red">
+                            Yandex
+                        </div>
+                    </div>
+                </div>
+
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Название поисковой системы</td>
+                            <td>Google</td>
+                            <td>Yandex</td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Число запросов</td>
+                            <td>2</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <form action="/" class="form">
+                    <div class="form-auth">
+                        <label for="email">Почта</label>
+                        <input type="email" name="email" placeholder="email..." id="email">
+                        <label for="password">Пароль</label>
+                        <input type="password" name="password" placeholder="password..." id="password">
+                    </div>
+
+                    <div class="form-comments">
+                        <textarea name="comment"></textarea>
+                        <select disabled>
+                            <option value="1">Google</option>
+                            <option value="2">Yandex</option>
+                        </select>
+                    </div>
+
+                    <input type="submit">
+                </form>
+
+                <div>
+                    <p>Этот текст содержит <sub>подстрочный</sub> фрагмент.</p>
+
+                    <p>Этот текст содержит <sup>надстрочный</sup> фрагмент.</p>
+
+                    Наведи на меня курсор 
+                    <div class="burger-menu">
+                        <div class="burger-menu-inner"></div>
+                    </div>
+                </div>
+            </div>
+        </section>     
+    </body>
 </html>
