@@ -4,8 +4,78 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" sizes="16x16" href="../Pictures/Star.png">
+        <title>Myne document</title>
     </head>
+ 
+    <body>
+        <center>
+            <h1>Заголовок</h1>
+            <div style="color: orange"> Первый текст с заданием через inline-style</div>
+            <p class="">Второй текст</p>
+        </center>
+        <div align="right" class="third_text"> Третий текст с заданием через class</div>
+        <div id="id_div"> Четвертый текст с заданием через  id</div>
 
-    <body></body>
+        <br>
+        <h3><a href="https://github.com/ned8800">Мой гитхаб</a></h3>
+        <br>
+        <table align="center" style="border: solid">
+            <thead><tr><td align="center">Милые животные</td></tr></thead>
+            <tr style="border: solid">
+                <td style="border: solid">
+                    <img src="../Pictures/pic1.png" height="250">
+                    <img src="../Pictures/pic3.jpg" height="250">
+                </td>
+            </tr>
+            <tr>
+                <td style="border: solid"><img src="../Pictures/pic2.jpg" width="645"></td>
+            </tr>
+        </table>
+
+
+        <form style="border: solid; width: 200px">
+            <label for="name_space">Имечко</label><br>
+            <input type="text" id="name_space" name="name_space" placeholder="введите имечко"><br>
+            <label for="surname_space">Имечко</label><br>
+            <input type="text" id="surname_space" name="surname_space" placeholder="И фамилию"><br>
+            <br>
+            <input type="color">
+            <br>
+            <input type="checkbox">
+            <br>
+            <input type="date">
+            <br>
+            <input type="time">
+            <br>
+            <input type="email" placeholder="ваш мейл">
+            <br>
+            <input type="file">
+            <br>
+            <label for="sex">Ваш пол</label><br>
+            <select id="sex">
+                <option>Мужчина</option>
+                <option>Женщина</option>
+            </select>
+            <br><br>
+            <input type="submit" value="отправить" style="background-color: forestgreen">
+            <br>
+        </form>
+
+        <div class="block1">
+            <div class="block2">
+                <div class="block3"><img src="../Pictures/Star.png"></div>
+            </div>
+        </div>
+        <br>
+        <div style="font-size: 20px; color: red"> Размер текста через пиксели</div><br>
+        <div style="font-size: 200%; color: #b200ff"> Размер текста через %</div><br>
+        <div style="font-size: 3vw; color: RGB(255,43,110)"> Размер текста через ширину экрана</div><br>
+
+        <p class="class1">Текст в <sup>надстрочным</sup> и <sub>подстрочным</sub> стиле с псевдоклассом наведения на него курсора</p><br>
+        <p class="class2"> Текст с псевдоэлементом</p>
+        <br>
+
+    </body>
 </html>
