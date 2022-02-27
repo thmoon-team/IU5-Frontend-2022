@@ -1,0 +1,69 @@
+div {
+    border: 10px solid black;
+    padding: 50px;
+    margin: 10px;
+    background-color: rgb(34, 34, 179);
+}
+
+p.head-text {
+    font-size: 40px;
+    color: white;
+}
+
+p.main-text {
+    color: #fff;
+}
+
+button {
+    border-radius: 15px;
+    border-top-color: black;
+    background-color: beige;
+    height: 50px;
+    width: 100px;
+    position: relative;
+    left: 35%;
+}
+
+form {
+    left: 20%;
+}
+
+button:active {
+    background-color: aquamarine;
+    box-shadow: red;
+}
+
+input {
+    height: 30px;
+    width: 200px;
+    border: 2px solid black;
+}
+
+input:hover {
+    border-color: aqua;
+}
+
+p.city {
+    color: white;
+    font-size: 20px;
+}
+
+h1 {
+    color: white;
+}
+
+a:active {
+    color: red;
+}
+
+#table-id {
+    border: 3px solid white;
+    color: white;
+    font-size: 15px;
+    border-collapse: separate;
+}
+
+.text1 {
+    color: rgb(252, 33, 33);
+    font-size: 20px;
+}
