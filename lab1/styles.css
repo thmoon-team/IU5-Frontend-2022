@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,300&display=swap');
+
+body{
+    margin: 0;
+    background: linear-gradient(black,rgb(126, 16, 16));
+}
+
+header .right_header{
+    align-items: center;
+    display: inline;
+}
+
+p {
+    width: 300px;
+    padding-left: 8px;
+    display: inline;
+}
+
+.text{
+    font-family: "Montserrat";
+    font-size: 75px;
+    font-weight: 500;
+    line-height: 35px;
+    text-align: center;
+    color: ghostwhite;
+}
+.text1{
+    font-family: "Montserrat";
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 35px;
+    text-align: center;
+    color: ghostwhite;
+}
+.text2{
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 35px;
+    text-align: center;
+    color: ghostwhite;
+}
+ul{
+    list-style: none;
+    background-color:#000000;
+    height: 125px;
+    top: 0px;
+    position: sticky;
+    margin: auto;
+    padding-left: 0;   
+    z-index: 2;
+    max-width: 100%;
+}
+ula{
+    list-style: none;
+    height: 100px;
+    top: 0px;
+    position: sticky;
+    margin: 0;
+    padding-left: 0;   
+    z-index: 2;
+}
+li{
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(126, 16, 16);
+}
+a:hover{
+    opacity: 90%;
+}
+abc{
+    text-decoration: none;
+    color: rgb(126, 16, 16);
+}
+abc:hover{
+    opacity: 75%;
+}
+header{
+    background-color:#000000;
+}
+
+main{
+    
+    background: linear-gradient(black,rgb(71, 3, 3));
+    z-index: 1;
+    height: 2000px
+};
+
+.marquee-text {
+    margin: 30px auto;
+    border: 1px solid #fff;
+    max-width: 80%;
+    overflow: hidden;
+}
+
+.marquee-text div {
+    width: 100%;
+    animation: marquee-text 5s linear infinite;
+}
+
+.marquee-infinite {
+    margin: 50px auto;
+    border: 1px solid #000;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.marquee-infinite div {
+    display: flex;
+    width: 200%;
+    animation: marquee-infinite 8s linear infinite;
+    justify-content: space-around;
+}
+
+.marquee-infinite span {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+@keyframes marquee-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee-infinite {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+body_form {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .form {
+    background-color: #000;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 500px;
+    padding: 20px;
+    width: 320px;
+  }
+  
+  .title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+  }
+  
+  .ic2 {
+    margin-top: 30px;
+  }
+  
+  .input {
+    background-color: rgb(51, 44, 44);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  .cut {
+    background-color: #000;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+  }
+  
+  .cut-short {
+    width: 50px;
+  }
+  
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+  }
+  
+  .placeholder {
+    color: #fff;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: #5f0c0c;
+  }
+  
+  .input:focus ~ .placeholder {
+    color: #dc2f55;
+  }
+  
+  .submit {
+    background-color: rgb(255, 103, 1);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .submit:active {
+    background-color: rgb(255, 103, 1);
+  }
+  
+    
+
+
+  
