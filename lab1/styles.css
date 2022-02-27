@@ -1,0 +1,83 @@
+* {
+	font-family: sans-serif;
+}
+
+.Block_title {
+	padding-top: 30px;
+	font-size: 200%;
+	letter-spacing: 1px;
+	font-weight: normal;
+}
+
+body {
+	background-color: #18BCBE;
+}
+
+.SignUp {
+	background-color: white;
+	height: 650px;
+	width: 30%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10%;
+	border: solid 2px #0000F4;
+	border-radius: 50px;
+	box-shadow: 0 4px 16px #ccc;
+}
+
+input {
+	position: relative;
+	font-size: 15px;
+	transition: .5s;
+
+}
+
+input[type="text"]
+{
+	height: 30px;
+	padding: 0 15px;
+	border-radius: 16px;
+	border: solid 0.5px;
+}
+
+input[type="password"]
+{
+	height: 30px;
+	padding: 0 15px;
+	border-radius: 16px;
+	border: solid 0.5px;
+}
+
+
+
+.input_style {
+	margin-top: 50px;
+	padding-left: 110px;
+	width: 100%;
+}
+
+.btn {
+	color: #F3F1F6;
+	background-color: #636CFF;
+	font-size: 25px;
+	border-radius: 40px;
+	border: solid 0px #0000F4;
+}
+
+
+button {
+	margin-top:  40px;
+	margin-left: 160px;
+	height: 50px;
+	width: 110px;
+}
+
+.Sign_in {
+	margin-top: 20px;
+	margin-left: 105px;
+}
+
+a {
+	text-decoration: none;
+	color: green;
+}
