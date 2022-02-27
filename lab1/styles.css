@@ -1,0 +1,197 @@
+
+html,body {
+    height: 100%;
+  }
+body{
+
+    background-image: linear-gradient(to right,#c0bfa5 0%,#a5ccbc 33%,#589192 66%,#215c5c 100%);                                   
+}
+
+h1{
+    color: #fff;
+    line-height: 0.7;
+    font-size: 80px;
+}
+.container{
+    position: absolute ;
+    left: 85%;
+    top: 0%
+}
+a i {
+   font-size: 30px;
+   color: #fff;
+}
+a  :hover {
+color: #5a3343
+}
+
+.gallery2 {
+    bottom: 320px;
+    width: 600px;  
+}
+
+.container1 {
+    display:inline-block;   
+    position:relative;
+    bottom: 53%;
+    left: 47%;
+}
+.text { 
+    display: none;
+    position: absolute;  
+    background-color:  rgba(90, 51, 67, 0.568);
+    padding: 5px 5px 5px 10px;
+    color: white;
+    width: 550px;  
+    font-size: 100%;
+    top: 420px;
+}
+.container1:hover div {
+    display: block 
+}
+
+.gallery1 {
+    position: relative;
+   
+    right: 200px;
+    bottom: 100%;      
+}
+
+.gallery3 {
+    position: relative;
+    bottom: 82%;
+    right: 355px; 
+}
+.gallery1:hover{
+    position: relative;
+    bottom:400px;
+}
+
+.table {
+	width: 45%;
+	margin-bottom: 20px;
+	
+	border-top: 5px solid #F2F8F8;
+	border-collapse: collapse; 
+    position: relative;
+    bottom: 80%;
+    left: 15px;
+}
+.table th {
+	font-weight: bold;
+	padding: 5px;
+	background: #F2F8F8;
+	border: none;
+	border-bottom: 14px solid #F2F8F8;
+}
+.table td {
+	padding: 5px;
+	border: none;
+	border-bottom: 5px solid #F2F8F8;
+    width: 25%;
+    height: 95px ;
+}
+.gallery5 {
+    width: 100%;
+}
+.table tbody td {
+    color: #fff;
+
+}
+.table thead th {
+    color: #fff;
+    background: rgba(90, 51, 67, 0.568);
+}
+* {
+    box-sizing: border-box;
+ }
+
+ .card {
+    max-width: 350px;
+    margin: 50px auto 0;
+    padding: 20px;
+    background: #fffdee;
+    font-family: 'Playfair Display';
+    color: #605756;
+    position:relative;
+    bottom: 75%;
+   
+ }
+ .form-row {
+    margin-bottom: 15px;
+ }
+ .form-row input[type="text"], .form-row input[type="email"], .form-row textarea {
+    width: 100%;
+    padding: 0 10px;
+    line-height: 35px;
+    border-width: 0;
+    outline: none;
+    background: transparent url(https://html5book.ru/wp-content/uploads/2016/12/bg-form.png) bottom left repeat-x;
+    background-size: 8px 35px;
+    font-family: 'Playfair Display';
+ }
+ .form-row textarea {
+    background-attachment: local;
+    background-repeat: repeat;
+    resize: none;
+ }
+ .form-row input[type="submit"] {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #c0bfa5;
+    border-width: 0;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Playfair Display';
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #fffdee;
+    text-transform: uppercase;
+    transition: 1s cubic-bezier(.165, .84, .44, 1);
+ }
+ .form-row input[type=submit]:hover {
+    background:  #5a3343
+ }
+ 
+ hr{
+     height: 20px;
+     background:  #5a3343;
+     position:relative;
+     bottom: 75%;
+ }
+
+ p1 {
+    background:  #5a3343;      
+
+}
+input [type="submit"], select {
+    background: #5a3343;
+    color: #fff;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  .btn-1 {
+    background: #589192;
+    border: none;
+  }
+  .btn-1:hover {
+     background: #5a3343;
+ 
+  }
