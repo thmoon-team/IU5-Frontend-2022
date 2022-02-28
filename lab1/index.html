@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
 
-    <body></body>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MySite</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <a href="https://github.com/MaSaHaKa229">Мой гитхаб</a>
+    <center>
+        <div class="title"><sup c>мяу</sup>Сайт с котиками<sub>мяу</sub></div>
+        <br>
+        <table>
+            <caption id="table_name">Фото котиков</caption>
+            <tr>
+                <th>Рыжие</th>
+                <th>Белые</th>
+                <th>Черные</th>
+            </tr>
+            <tr>
+                <td><img src="images/rizh1.jpg" width="300" height="200" alt="problem"></td>
+                <td><img src="images/wh1.jpg" width="300" height="200" alt="problem"></td>
+                <td><img src="images/bl1.jpg" width="300" height="200" alt="problem"></td>
+            </tr>
+            <tr>
+                <td><img src="images/rizh2.jpg" width="300" height="200" alt="problem"></td>
+                <td><img src="images/wh2.jpg" width="300" height="200" alt="problem"></td>
+                <td><img src="images/bl2.jpg" width="300" height="200" alt="problem"></td>
+            </tr>
+            <tr>
+                <td><img src="images/rizh3.jpg" width="300" height="200" alt="problem"></td>
+                <td><img src="images/wh3.jpg" width="300" height="200" alt="problem"></td>
+                <td><img src="images/bl3.jpg" width="300" height="200" alt="problem"></td>
+            </tr>
+        </table>
+        <div class="text1">Я люблю котиков</div>
+        <div style="color:maroon; font-size: 20px">У меня есть рыжий кот</div>
+        <div class="left">
+            <p>Без кота и жизнь не та</p>
+            <img src="images\zero.jpg" width="600" height="600" alt="problem">
+        </div>
+        <div class="first_in">
+            <label for="cb">Отметьте, если любите котиков</label>
+            <input type="checkbox" id="cb">
+        </div>
+        <div class="sec_in">
+            <label for="acb">Какой цвет у вашего котика?</label>
+            <input type="color" id="acb">
+        </div>
+        <div>
+            <label for="pet-select">Выберите ваше домашнее животное, если нет котика:</label>
+            <select name="pets">
+                <option value="">-Выбор-</option>
+                <option value="dog">Собака</option>
+                <option value="turtle">Черепаха</option>
+                <option value="hamster">Хомяк</option>
+                <option value="bird">Попугай</option>
+                <option value="another">Другое</option>
+            </select>
+        </div>
+    </center>
+</body>
+
 </html>
