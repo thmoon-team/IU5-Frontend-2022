@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+a {
+    color : darkgreen;
+}
+
+body {
+    background-color: #50fff4;
+
+}
+
+h1 {
+    color : darkblue;
+}
+
+p {
+    color: orangered;
+}
+
+p.class1:hover {
+    color: blueviolet;
+}
+
+p.class2::first-letter{
+    color: black;
+}
+
+div.third_text {
+    color: mediumvioletred;
+}
+
+#id_div {
+    color: sandybrown;
+}
+
+div.block1 {
+    width: 20%;
+    display: block;
+    margin: 30px;
+    padding: 10px;
+    border: dotted;
+    border-color: coral;
+    background-color: aliceblue;
+}
+
+div.block2 {
+    width: 70%;
+    display: block;
+    margin: 10px;
+    padding: 20px;
+    border: double;
+    border-color: black;
+    background-color: chartreuse;
+}
+
+div.block3 {
+    width: 7vw;
+    display: block;
+    margin: 6px;
+    padding: 2px;
+    border: solid;
+    border-color: violet;
+    background-color: black;
+}
