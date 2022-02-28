@@ -1,0 +1,136 @@
+body {
+    background: url(./img/45c843bb4912b24a5470f7303fad010e.jpg) no-repeat;
+    background-size: 100%;
+    color:#fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+@font-face {
+	font-family: 'FiraSans'; 
+	src: url(./font/FiraSans-Heavy.otf); 
+}
+#title1 {
+    font-size: 30px;
+    font-family: "FiraSans";
+    margin-left: 200px;
+    color:#1b1b1b;
+}
+table {
+    border: 1px solid grey;
+    margin-top: 20px;
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    padding:10px;
+}
+    a{
+        font-weight: bold;
+    }
+    a:link { 
+    color: rgb(255, 255, 255); 
+   }
+    a:visited { 
+    color: rgb(255, 255, 255); 
+   }
+    a:hover { 
+    color: #f00; 
+   }
+   
+ 
+ /* границы ячеек первого ряда таблицы */
+ tr {
+    border: 0px solid grey;
+ }
+ /* границы ячеек тела таблицы */
+ td {
+    border: 0px solid grey;
+    padding: 10px;
+    
+ }
+ .poster{
+     width: 350px;
+ }
+ .cinema_name{
+     font-family: FiraSans;/*изменить шрифт*/
+ }
+ .redrate{
+     color:red;
+ }
+ .greenrate{
+     color:rgb(0,255,0);
+ }
+ .yellowrate{
+     color:#FBF003;
+ }
+ .form1 {
+    background-color: #1b1b1b;
+    margin-top: 2%;
+    border-radius: 10px;
+    display: inline-block;
+    height: 5%;
+    padding:15px;
+    border:2px rgb(255, 255, 255);
+ }
+
+ input,select {
+     margin:12px;
+     border-radius: 7px;
+     border:1px solid #fff;
+     padding:10px;
+     margin-left: 15px;
+     
+ }
+ ::placeholder {
+    color: rgb(156, 156, 156);
+    
+  }
+.desc_h{
+    font-weight: bold;
+}
+sup{
+    font-size: small;
+
+}
+.form2{
+    background-color: #1b1b1b;
+    margin-top: 1%;
+    border-radius: 10px;
+    width:50%;
+    height: 5%;
+    padding:15px;
+    border:2px rgb(255, 255, 255);
+    font-size: small;
+}
+hr {
+    margin-top:20px;
+    height: 1px;
+    border: 0;
+    background-color: #686868;
+    }
+#descr{
+    font-size: small;
+    color: #686868;
+}
+button {
+    width: 150px;
+    margin-top: 10px;
+    margin-left:30px;
+    
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 20px;
+    border-radius: 25px;
+    
+    font-weight: bold;
+    color: rgb(252, 146, 30);
+    }
+button:hover{
+    color:#fff;
+    background-color:rgb(252, 146, 30);
+    border-color: rgb(252, 146, 30);
+}
+button:active{
+    color:#fff;
+    background-color:rgb(226, 117, 0);
+    border-color: rgb(226, 117, 0);
+}
