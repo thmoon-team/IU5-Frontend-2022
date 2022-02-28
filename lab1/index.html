@@ -4,8 +4,179 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
 
-    <body></body>
+        <!--Подключаю шрифт-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+        <link href="https://fonts.googleapis.com/css2? family=Montserrat:wght@100&display=swap" rel="stylesheet">
+        
+        <!--Подключаю иконки-->
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        
+        <link rel="stylesheet" href="./styl.css">
+    </head>
+    <body>
+        
+        <header class="header">
+        <nav>
+            <div class="log">
+                <img src="img/Klimov Nikita (1).png" alt=""
+                class="log-log">
+            </div>
+        </nav>    
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Интересные факты</a></li>
+            <li><a href="#">Интересные подборки</a></li>
+            <li><a href="#">Музыка</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        
+        
+            
+        </header>
+       
+        <div class="hero">
+            <div class="container hero__container">
+                <div class="hero__about">
+                    <h1 class="hero__about">
+                        Студент и хороший человек
+                    </h1>
+                    <h2 class="hero__subtitle">Климов 
+                    Никита</h2>
+                    <p class="hero__description">
+                        Всем привет, это мой пробный сайт в которм собраны некоторые ништяки, надеюсь вам будет интересно.
+                    </p>
+                    <div class="hero__links">
+                        <a class="hero__link" href="https://www.instagram.com/nik_klimov/">
+                            <i class='bx bxl-instagram'></i></a>
+                        <a class="hero__link" href="#">
+                            <i class='bx bxl-vk'></i></a>
+                        <a class="hero__link" href="#">
+                            <i class='bx bxl-telegram'></i></a>
+                    </div>
+                </div>
+                <div class="hero__box">
+                    <img src="img/herophoto.png" alt="men">
+                </div>
+            </div>
+        </div>
+
+        
+        <table>
+            <tr class="main">
+                <td>Номер</td>
+                <td>Характеристика</td>
+                <td>Оценка</td>
+            </tr>
+            <tr class="str">
+                <td>#1</td>
+                <td>Интеллект</td>
+                <td>7 из 10</td>
+            </tr>
+            <tr class="str">
+                <td>#2</td>
+                <td>Коммуникабельность</td>
+                <td>10 из 10</td>
+            </tr>
+            <tr class="str">
+                <td>#3</td>
+                <td>Дружелюбие</td>
+                <td>8 из 10</td>
+            </tr>
+            <tr class="str">
+                <td>#4</td>
+                <td>Агрессия</td>
+                <td>Только пассивная</td>
+            </tr>
+            <tr class="str">
+                <td>#5</td>
+                <td>Трудолюбие</td>
+                <td>8 из 10</td>
+            </tr>
+        </table>
+        
+        <section class="gallery">
+            <h2 class="title">Gallery</h2>
+            <div class="gallery-list">
+              <a href="img/img1.jpg" class="gallery-item">
+                <div class="gallery-item-hover">Посмотреть</div>
+                <img src="img/img1.jpg" alt="alt">
+              </a>
+              <a href="img/img2.jpg" class="gallery-item">
+                <div class="gallery-item-hover">Посмотреть</div>
+                <img src="img/img2.jpg" alt="alt">
+              </a>
+              <a href="img/img3.jpg" class="gallery-item">
+                <div class="gallery-item-hover">Посмотреть</div>
+                <img src="img/img3.jpg" alt="alt">
+              </a>
+
+            </div>
+          </section>
+          <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+  <script>
+    $(".gallery-list").magnificPopup({
+      delegate: "a",
+      type: "image",
+      gallery: {
+        enabled: true
+      }
+    });
+  </script>
+  <hr width="100%" size="1px" color="black">
+  <div class="end" style="margin: 5%;">
+    <br>
+    
+    <br>
+    <br>
+    <nav>
+        <div class="log">
+            <img src="img/Klimov Nikita (2).png" alt=""
+            class="log-log1">
+        </div>
+    </nav> 
+    <br>
+    <br>
+
+
+        <!--Форма-->
+        <form class="box" action="index.html" method="post">
+            <h1>Предложения</h1>
+            <input type="text" name="" placeholder="От кого">
+            <input type="password" name="" placeholder="Пожелания">
+            <input type="submit" name="" value="Отправить">
+        </form>
+    <p class="text_for_box">Важно делиться своим мнением 
+        по этому вы можете написать свои пожелания и они обязательно дойдут до меня</p>
+    </div>
+    <hr width="100%" size="1px" color="black">
+
+    
+
+    <!--реализация select-->
+    <h1>Оцените сайт</h1>
+<div class="select">
+   <select name="format" id="format">
+      <option selected disabled>Оценка</option>
+      <option value="ok1">Произведение искусства</option>
+      <option value="ok2">Шедеврально</option>
+      <option value="ok3">Замечательно</option>
+      <option value="ok4">Великолепно</option>
+      <option value="ok5">Хорошо</option>
+   </select>
+</div>
+<p id="text_ender">
+        При поддержке 
+        <a style="text-decoration: none;"href="https://github.com/thmoon-team/IU5-Frontend-2022">
+        thmoon-team <sup>♥</sup></a>
+    </p>
+<p id="text_ender_ender">
+    <a style="color: red"> Живите в мире и будьте счастливы <sub>Удачи</sub></a>
+</p>
+        
+    </body>
 </html>
