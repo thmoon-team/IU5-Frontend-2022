@@ -1,0 +1,113 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.container__card {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card__item img {
+	width: 200px;
+	height: auto;
+}
+
+.card__item:last-child img {
+	width: 300px;
+	height: auto;
+}
+
+.card__text {
+	text-align: center;
+	padding-top: 20px;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table td {
+	padding: 20px;
+	text-align: center;
+	border: 1px solid #000;
+}
+
+.form {
+	margin-top: 20px;
+	font-size: 1.2em;
+}
+
+#email {
+	color: rgb(0, 255, 0)
+}
+
+#password {
+	color: rgb(255, 255, 0)
+}
+
+.form-comments {
+	margin: 20px 0;
+}
+
+.burger-menu {
+	width: 25px;
+	padding: 10px 0;
+	margin: 30px;
+	position: relative;
+	cursor: pointer;
+}
+
+.burger-menu-inner {
+	width: 100%;
+	height: 2px;
+	background-color: #000;
+}
+
+.burger-menu::before, .burger-menu::after {
+	content: "";
+	width: 25px;
+	height: 2px;
+	position: absolute;
+	background-color: #000;
+	transition: all .2s linear;
+}
+
+.burger-menu::before {
+	top: 0;
+}
+
+.burger-menu::after {
+	bottom: 0;
+}
+
+.burger-menu:hover .burger-menu-inner{
+	opacity: 0;
+}
+
+.burger-menu:hover::before, .burger-menu:hover::after {
+	transform: translateY(-50%);
+	top: 50%
+}
+
+.burger-menu:hover::before {
+	transform: rotate(-45deg);
+}
+
+.burger-menu:hover::after {
+	transform: rotate(45deg);
+}
