@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.box{
+    background: url(./img/fone.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#header-text{
+    font-size: 75px;
+    color: aliceblue;
+}
+.reg-form{
+    height: 500px;
+}
+.form-inner{
+    display: flex;
+    justify-content: space-around;
+    height: 800px;
+}
+.input-text{
+    font-size: 40px;
+    color: #ffffff;
+}
+.form-input{
+    width: 500px;
+    height: 60px;
+    font-size: 35px;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 5px 0 5px 10px;
+}
+.Player{
+    width: 500px;
+    height: 300px;
+    display: block;
+}
+.img-wrapper a {
+    font-size: 50px;
+    color: rgb(255, 255, 255)
+}
+.reg-form-submit{
+
+    height: 60px;
+    width: 350px;
+    display: block;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: aliceblue;
+}
+#Tab{
+    color: #ffffff;
+    width: 1000px;
+    font-size: 40px;
+    margin: auto;
+    border-collapse: collapse;
+}
+th, td{
+    border: 4px solid #ffffff;
+}
+.reg-form-submit
+{
+transition: .2s ease;
+display: block;
+margin: 0 auto;
+}
+.reg-form-submit:hover { 
+    border:1px solid #fff;
+    background: none;
+}
+.input-text::before {
+    content: "*";
+}
+.form-input::placeholder {
+    color:#fff;
+}
