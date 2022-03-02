@@ -1,0 +1,86 @@
+body{
+    background-color:rgb(197, 150, 241);
+}
+
+
+ h1{
+    border: 3px dashed #f8f4f4;
+    background-color: #0066FF;
+    color: #ffffff;
+    text-align: center
+  }
+  
+div{
+    font-size: 150%;
+    color: #00eccd;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 10px
+}
+
+td{
+    font-size: 16px;
+}
+
+  p{
+    padding: 10px; /*внутренний отступ для всех сторон*/
+    margin: 5px;   /*внешний отступ для всех сторон*/  
+ }
+
+
+  form{
+    margin-top:50px;
+  }
+
+  legend{
+    border: 3px dashed #f1e203;
+    background-color: #00ffbf;
+    color:darkblue;
+    padding: 10px, 35px; /*внутренний отступ для всех сторон*/
+    margin: 50px, 70px; 
+    font-size: 130%;
+  }
+
+  .imgsize{
+    position: relative;
+
+    margin:5px
+}
+
+
+  .blockquote {
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    position: relative;
+    padding: 5px 32px;
+    background-color: #eafa06;
+    color: #004d40;
+    border-radius: 8px;
+  }
+  
+  .blockquote::before {
+    content: '\201e';
+    position: absolute;
+    top: -16px;
+    left: 6px;
+    font-family: Georgia, serif;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: bold;
+  }
+  
+  .blockquote::after {
+    content: '\201c';
+    position: absolute;
+    right: 6px;
+    font-family: Georgia, serif;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: bold;
+  }
+
+
+
+ 
