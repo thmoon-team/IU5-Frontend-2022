@@ -1,0 +1,102 @@
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+html, body { height: 100%; width: 100%; }
+
+.navigation {
+    /* critical sizing and position styles */
+    display: flex;
+    flex-direction: column;
+    justify-items: right;
+    align-items:flex-end;
+    padding-top: 30px;
+    width: 45vw;
+    height: 100vh;
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    overflow:scroll;
+
+    /* non-critical appearance styles */
+    list-style: none;
+    background: linear-gradient(230.95deg, #CB1AE8 -0.37%, #37BDA6 100%);
+  }
+
+  /* Navigation Menu - List items */
+
+  .nav-item{
+      border-bottom: 1px solid white;
+      width: 80%;
+      display:flex;
+      justify-items: right;
+      align-items:flex-end;
+  }
+
+  .nav-item a {
+    /* non-critical appearance styles */
+
+    display: block;
+    padding: 1em;
+    background:none;
+    font-size: 5vw;
+    text-decoration: none;
+    color:aliceblue;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
+    font-family: 'poppins-bold', sans-serif !important;
+  }
+
+  .nav-item a:hover {
+    color:#FFFFFF;
+  }
+
+  /* Site Wrapper - Everything that isn't navigation */
+  .site-wrap {
+    /* Critical position and size styles */
+    min-height: 100%;
+    min-width: 100%;
+    background-color: white; /* Needs a background or else the nav will show through */
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    right: 0;
+    z-index: 1;
+
+    /* non-critical apperance styles */
+  }
+
+  /* Nav Trigger */
+  .nav-trigger {
+    /* critical styles - hide the checkbox input */
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  label[for="nav-trigger"] {
+
+    /* critical positioning styles */
+    position:absolute;
+    right: 28px; top: 40px;
+    z-index: 2;
+
+    /* non-critical apperance styles */
+    height: fit-content;
+    width: 44px;
+    cursor: pointer;
+    background-size: contain;
+  }
+
+  /* Make the Magic Happen */
+  .nav-trigger + label, .site-wrap {
+    transition: right 0.2s;
+  }
+
+  .nav-trigger:checked + label {
+    right: 44vw;
+  }
+
+  .nav-trigger:checked ~ .site-wrap {
+    right: 40vw;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+  }
