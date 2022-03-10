@@ -1,0 +1,796 @@
+#header {
+    height: 30px;
+    background-color: #fff;
+    width: 100%;
+}
+
+body{
+    margin-left:0;
+    margin-right:0;
+    font-family:'Circular Std';
+}
+#logo{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.Hero0{
+    display: flex;
+    justify-content: space-between;
+    margin-left:5%;
+    margin-right:5%;
+    align-items:center;
+    
+}
+.headerBlock{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    margin-right: 4%;
+    font-size: 18px;
+    
+}
+.loginflex{
+    display:flex;
+    justify-content: space-between;
+
+}
+.menu{
+    display:none;
+}
+@font-face {
+	font-family: 'Circular Std'; 
+	src: url(./fonts/CircularStd-Black.ttf); 
+}
+.loginButton{
+    background-color: #fff;
+    border: 1px solid #00B6F0;
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-size:18px;
+    font-family: 'Circular Std';
+    color:#00b6f0;
+    
+
+}
+#loginButton:hover{
+    color:#fff;
+    background-color:#00b6f0;
+    border-color: #006283;
+}
+#backgroundHero0{
+    
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.22) 7.62%, rgba(0, 225, 255, 0.22) 25.5%, #FFFFFF 70.92%);
+}
+.firsttext{
+    font-size:72px;
+    margin-top:8%;
+    text-align: center;
+    color:#112D57;
+}
+.secondtext{
+    font-size:24px;
+    margin-left:32%;
+    margin-right:32%;
+    text-align: center;
+    color:#5C5C5C;
+}
+.twoButtons{
+    display: flex;
+    justify-content: center;
+    margin-top:6%;
+    font-size: 18px;
+}
+.StartButton{
+    background-color: #00B6F0;
+    border: 1px solid #00B6F0;
+    padding: 13px 40px;
+    border-radius: 25px;
+    font-size:18px;
+    font-family: 'Circular Std';
+    color:#fff;
+    margin-right:10px;
+}
+.TryButton{
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding: 13px 40px;
+    border-radius: 25px;
+    font-size:18px;
+    font-family: 'Circular Std';
+    color:#000000;
+    margin-left:10px;
+}
+.website{
+    margin-top:4%;
+    text-align:center;
+    width:100%;
+    height:fit-content;
+}
+.websiteImage{
+    width:62vw;
+}
+
+
+
+.JustType{
+    margin-top: 2%;
+    font-size:36px;
+    color:#F3CD03;
+    font-family:"Circular Std";
+    text-align:center;
+}
+.FastestWay{
+    font-size:56px;
+    color:#20262A;
+    font-family:"Circular Std";
+    text-align:center;
+}
+
+.MostCalendars{
+    font-size:24px;
+    color:#5C5C5C;
+    font-family:"Circular Std";
+    text-align:center;
+    
+}
+.twoButtons2{
+    display: flex;
+    justify-content: center;
+    margin-top:3%;
+    font-size: 18px;
+}
+.button1{
+    background-color: #00B6F0;
+    border: 1px solid #00B6F0;
+    padding: 13px 40px;
+    border-radius: 25px;
+    font-size:18px;
+    font-family: 'Circular Std';
+    color:#fff;
+    margin-right:10px;
+}
+.button2{
+    background-color: #ffffff;
+    border: 1px solid #00B6F0;
+    padding: 13px 40px;
+    border-radius: 25px;
+    font-size:18px;
+    font-family: 'Circular Std';
+    color:#00B6F0;
+    margin-right:10px;
+}
+.OpenType{
+    display: flex;
+    justify-content: center;
+    margin-left:5%;
+    margin-right:5%;
+    margin-top:10%;
+    align-items:center;
+}
+.image53{
+    width:30vw;
+}
+.image54{
+    width:30vw;
+}
+.textOpenType{
+    width:35vw;
+}
+.text1{
+    margin-top: 4%;
+    font-size:36px;
+    color:#20262A;
+    font-family:"Circular Std";
+    text-align:left;
+}
+.text2{
+    margin-top: 2%;
+    font-size:24px;
+    color:#5C5C5C;
+    font-family:"Circular Std";
+    text-align:left;
+}
+.text3{
+    margin-top: 2%;
+    font-size:18px;
+    color:#00B6F0;
+    font-family:"Circular Std";
+    text-align:left;
+}
+.Variable{
+    display: flex;
+    justify-content: center;
+    margin-left:5%;
+    margin-right:5%;
+    margin-top:10%;
+    align-items:center;
+}
+.ARethink{
+    margin-top: 8%;
+    font-size:56px;
+    color:#20262A;
+    font-family:"Circular Std";
+    text-align:center;
+}
+.Being{
+    margin-top: 2%;
+    font-size:19px;
+    color:#5C5C5C;
+    font-family:"Circular Std";
+    text-align:center;
+}
+.rectangle{
+    width:50vw;
+    text-align:center;
+}
+.website1{
+    margin-top:4%;
+    
+    width:fit-content;
+    height:fit-content;
+}
+.rectangle{
+    width:50vw;
+    text-align:center;
+}
+.statusbar{
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+.statusbarwrapper{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.underline{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+
+.button3d{
+    display: flex;
+    justify-content: center;
+    margin-top:3%;
+    font-size: 18px;
+}
+.button3{
+    background-color: #00B6F0;
+    border: 1px solid #00B6F0;
+    padding: 13px 50px;
+    border-radius: 25px;
+    font-size:18px;
+    font-family: 'Circular Std';
+    color:#fff;
+    margin-right:10px;
+}
+.testi{
+    margin-top: 10%;
+    font-size:36px;
+    color:#20262A;
+    font-family:"Circular Std";
+    text-align:center;
+}
+.ibm{
+    display:flex;
+    justify-content: center;
+    margin-top:3%;
+}
+.beingflex{
+    display:flex;
+    justify-content: center;
+    margin-top:3%;
+}
+.being{
+    font-size:19px;
+    color:#5C5C5C;
+    font-family:"Circular Std";
+    text-align:center;
+    width:30vw;
+}
+.designerflex{
+    display:flex;
+    justify-content: center;
+    margin-top:3%;
+}
+
+.desighnertext{
+    margin-left:23px;
+}
+.esther{
+    font-size:18px;
+    color:#20262A;
+    font-family:"Circular Std";
+    text-align:left;
+    
+}
+.designer{
+    font-size:18px;
+    color:#5C5C5C;
+    font-family:"Circular Std";
+    text-align:left;
+    
+}
+.allbutton{
+    display:flex;
+    justify-content: center;
+    margin-top:3%;
+}
+.all{
+    background-color: #00B6F0;
+    border: 1px solid #00B6F0;
+    padding: 13px 50px;
+    border-radius: 25px;
+    font-size:18px;
+    font-family: 'Circular Std';
+    color:#fff;
+    margin-right:10px;
+}
+.black{
+    background-color: #182333;
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:7%;
+    padding-bottom: 10vh;
+}
+.pricing{
+    width:20vw;
+    margin-top: 10%;
+}
+.pricing1{
+    
+    font-size:56px;
+    color:#FFFFFF;
+    font-family:"Circular Std";
+    text-align:left;
+    
+}
+.pricing2{
+    font-size:19px;
+    color:#FFFFFF;
+    font-family:"Circular Std";
+    text-align:left;
+    
+    
+}
+.dayTrial{
+    width:20vw;
+    margin-top:10%;
+}
+.freetrial{
+    
+    font-size:18px;
+    color:#FFFFFF;
+    font-family:"Circular Std";
+    text-align:left;
+    
+}
+.flexdollar{
+    display:flex;
+    margin-top:19px;
+}
+.permonths{
+    margin-left:10px;
+}
+.monthsper{
+    font-size:24px;
+    color:#FFFFFF;
+    font-family:"Circular Std";
+    text-align:left;
+    
+}
+
+.user{
+    font-size:24px;
+    color:#FFFFFF;
+    font-family:"Circular Std";
+    text-align:left;
+}
+.most{
+    font-size:19px;
+    color:#FFFFFF;
+    font-family:"Circular Std";
+    text-align:left;
+    margin-top:20px;
+    width:20vw;
+}
+.buttonflex{
+    display:flex;
+    justify-content: left;
+    margin-top:5vh;
+}
+.getstarted{
+    background-color: #00B6F0;
+    border: 1px solid #00B6F0;
+    padding: 13px 50px;
+    border-radius: 25px;
+    font-size:18px;
+    font-family: 'Circular Std';
+    color:#fff;
+    margin-right:10px;
+}
+.ergonomic{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:7%;
+    padding-bottom: 10vh;
+}
+.wefocus{
+    font-size:36px;
+    color:#20262A;
+    font-family:"Circular Std";
+    text-align:left;
+    margin-top:10vh;
+    width:20vw;
+    
+}
+.being1{
+    margin-top: 10vh;
+    width:20vw;
+    
+}
+.being11{
+    font-size:19px;
+    color:#5C5C5C;
+    font-family:"Circular Std";
+    text-align:left;
+    
+    width:20vw;
+}
+.being12{
+    font-size:19px;
+    color:#5C5C5C;
+    font-family:"Circular Std";
+    text-align:left;
+    margin-top:3vh;
+    width:20vw;
+}
+.getstarted1{
+    background-color: #00B6F0;
+    border: 1px solid #00B6F0;
+    padding: 13px 50px;
+    border-radius: 25px;
+    font-size:18px;
+    font-family: 'Circular Std';
+    color:#fff;
+    margin-top:3vh;
+}
+.bottomflex{
+    
+    display:flex;
+    justify-content: space-between;
+    margin-top:7%;
+    padding-bottom: 10vh;
+    align-items:center;
+}
+.bottomlogo{
+    width:20vw;
+    margin-left:5vw;
+}
+.flexfour{
+    display:flex;
+    justify-content: space-between;
+    width:30vw;
+}
+.homebottom{
+    font-size:18px;
+    color:#20262A;
+    font-family:"Circular Std";
+    text-align:left;
+    vertical-align: center;
+}
+.socialflex{
+    display:flex;
+    justify-content: space-evenly;
+    width:20vw;
+}
+@media screen  and (max-width: 800px){
+    div[class='Hero0']{
+       justify-content: space-between;
+       
+    }
+    div[class='headerBlock']{
+        display:none;
+    }
+    div[class='loginflex']{
+        vertical-align: center;
+        justify-content: space-evenly;
+        width:30vw;
+    }
+    div[class='menu']{
+        display:flex;
+        justify-content: center;
+        vertical-align: center;
+    }
+    img[class='menu1']{
+        height:fit-content;
+        margin-left:7px;
+        margin-top: 15px;
+    }
+    div[class='firsttext']{
+        font-size: 56px;;
+    }
+    div[class='twoButtons2']{
+        flex-direction: column ;
+        width: fit-content;
+        justify-content: center;
+        
+    }
+    div[class='justTypeflex']{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    button[class='button2']{
+        margin-top:20px;
+    }
+    div[class='OpenType']{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    div[class='text1']{
+        text-align: center;
+    }
+    div[class='text2']{
+        text-align: center;
+    }
+    div[class='text3']{
+        text-align: center;
+    }
+    div[class='Variable']{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    div[class='black']{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    div[class='pricing']{
+        text-align: center;
+        width:40vw;
+    }
+
+    div[class='pricing1']{
+        text-align: center;
+        
+    }
+    div[class='pricing2']{
+        text-align: center;
+        
+       
+    }
+    div[class='dayTrial']{
+        text-align: center;
+        width:40vw;
+
+    }
+    div[class='freetrial']{
+        text-align: center;
+        
+    }
+    div[class='flexdollar']{
+        justify-content: space-evenly;
+        
+    }
+    
+    div[class='most']{
+        text-align: center;
+    }
+    div[class='most1']{
+        display:flex;
+        justify-content: center;
+        text-align: center;
+    }
+    div[class='buttonflex']{
+        display:flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    div[class='ergonomic']{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    div[class='wefocus']{
+        text-align: center;
+        width:40vw;
+    }
+    div[class='being11']{
+        text-align: center;
+        width:40vw;
+    }
+    div[class='being11flex']{
+        display:flex;
+        justify-content: center;
+        text-align: center;
+    }
+    div[class='being12flex']{
+        display:flex;
+        justify-content: center;
+        text-align: center;
+    }
+    div[class='being1']{
+        text-align: center;
+        width:50vw;
+        align-items: center;
+    }
+
+    div[class='being12']{
+        text-align: center;
+        width:40vw;
+    }
+    div[class='bottomflex']{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        height:50vh;
+    }
+    div[class='flexfour']{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        height:15vh;
+    }
+    div[class='socialflex']{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        width:30vw;
+    }
+    img[class='image53']{
+        width:70vw;
+    }
+    div[class='text1']{
+        font-size: 30px;
+        
+    }
+    div[class='textOpenType']{
+        width:90vw;
+    }
+    img[class='image54']{
+        width:70vw;
+    }
+    div[class='ARethink']{
+        font-size:35px;
+    }
+    div[class='Being']{
+        font-size:18px;
+        
+    }
+    div[class='being']{
+        
+        width:80vw;
+        
+    }
+    
+    }
+@media screen  and (max-width: 550px){
+    button[class='loginButton']{
+        padding: 15px 15px;
+        border-radius: 25px;
+        font-size:15px;
+        
+        
+    }
+    div[class='firsttext']{
+        font-size:40px;
+    }
+    div[class='secondtext']{
+        margin-left:10%;
+        margin-right:10%;
+        
+    }
+    button[class='StartButton']{
+        padding: 15px 15px;
+        border-radius: 25px;
+        font-size:15px;
+    }
+    button[class='TryButton']{
+        padding: 15px 15px;
+        border-radius: 25px;
+        font-size:15px;
+    }
+    img[class='websiteImage']{
+        width:80vw;
+    }
+    div[class='JustType']{
+        font-size:30px;
+    }
+    div[class='FastestWay']{
+        font-size:40px;
+    }
+    div[class='MostCalendars']{
+        font-size:24px;
+        margin-left:10%;
+        margin-right:10%;
+    }
+    button[class='button1']{
+        padding: 15px 15px;
+        border-radius: 25px;
+        font-size:15px;
+    }
+    button[class='button2']{
+        padding: 15px 15px;
+        border-radius: 25px;
+        font-size:15px;
+    }
+    
+    div[class='pricing']{
+        
+        width:80vw;
+        
+    }
+    div[class='dayTrial']{
+        
+        width:80vw;
+        
+    }
+    div[class='wefocus']{
+        
+        width:80vw;
+        
+    }
+    div[class='being1']{
+        
+        width:80vw;
+        
+    }
+    div[class='being11']{
+        
+        width:80vw;
+        
+    }
+    div[class='being12']{
+        
+        width:80vw;
+        
+    }
+    div[class='bottomflex']{
+        
+        height:500px;
+        
+    }
+    div[class='bottomlogo']{
+        
+        width:250px;
+        margin-left:0;
+    }
+    div[class='most1']{
+        
+        width:80vw;
+        
+    }
+    div[class='most']{
+        
+        width:80vw;
+        
+    }
+    div[class='homebottom']{
+        
+        font-size:30px;
+        margin-top:7px;
+        
+    }
+    div[class='socialflex']{
+        
+        width:56vw;
+        
+    }
+    
+
+
+}
+    
+
