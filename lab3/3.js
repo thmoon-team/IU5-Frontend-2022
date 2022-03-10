@@ -8,12 +8,12 @@
  */
 
 function multiplyArray(arr, n) {
-    let newArr = arr.slice();
-    for (let i = 0; i < newArr.length; ++i){
-        if (typeof(newArr[i]) == 'number'){
-            newArr[i] *= n;
+    let newArr = arr.map(function(x){
+        if (typeof(x) == 'number'){
+            return x * n;
         }
-    }
+        return x
+    });
     return newArr;
 }
 

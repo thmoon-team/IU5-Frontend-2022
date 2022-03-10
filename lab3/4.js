@@ -8,14 +8,13 @@
  */
 
 function prettySum(arr) {
-    sum = 0;
-    for(let i = 0; i < arr.length; ++i){
-        if (i % 2 == 0){
-            sum += arr[i];
+    sum = arr[0];
+    arr.reduce(function(a, b, index){
+        if (index % 2 == 0){
+            sum += b;
         }
-    }
-    sum *= arr.slice(-1);
-    return(sum);
+    });
+    return sum *= arr.at(-1);
 }
 
 module.exports = prettySum;

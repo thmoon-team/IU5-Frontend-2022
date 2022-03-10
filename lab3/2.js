@@ -9,21 +9,15 @@
  */
 function getMinMax(str) {
     let MinMax = {min: Number.MAX_SAFE_INTEGER, max: Number.MIN_SAFE_INTEGER}
-    num = ''
-    for(let i = 0; i < str.length; ++i){
-        if (+str[i] || str[i]=='-' || str[i] == '.'){
-            num = num + str[i];
+    function numbers(number){
+        if (+number < MinMax.min){
+            MinMax.min = +number;
         }
-        else{
-            if (+num < MinMax.min){
-                MinMax.min = +num;
-            }
-            if (+num > MinMax.max){
-                MinMax.max = +num;
-            }
-            num = '';
+        if (+number > MinMax.max){
+            MinMax.max = +number;
         }
     }
+    str.replace(/[0-9-.]+/g, numbers);
     return MinMax;
 }
 
