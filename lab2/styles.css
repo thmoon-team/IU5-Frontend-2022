@@ -94,6 +94,7 @@ div > * {
 }
 
 #div1 {
+    position: relative;
     margin: 30px 0px 30px;
     border: none;
     background: linear-gradient(var(--main-bg-white) 20%, var(--main-bg-cyan) 43%, var(--main-bg-white) 71%);
