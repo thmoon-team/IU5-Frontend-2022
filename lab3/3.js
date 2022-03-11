@@ -8,7 +8,8 @@
  */
 
 function multiplyArray(arr, n) {
-    // code here
+    return Array.from(arr, x => typeof(x) === 'number' ? x * n : x);
 }
 
 module.exports = multiplyArray;
+//console.log(multiplyArray([1, 2, 3, 'ddd', {min: 1}, 22, false], 2));
