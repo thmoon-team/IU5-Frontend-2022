@@ -14,7 +14,6 @@ function prettySum(arr) {
             sum += b;
         }
     });
-    return sum *= arr.at(-1);
+    return sum * arr.at(-1);
 }
-
 module.exports = prettySum;
