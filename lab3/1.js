@@ -18,5 +18,5 @@ function capitalize(str) {
     }
     return str;
 } 
-//console.log("'" + capitalize('e,tqnt vtyz ой сори \tааааа?') + "'");
+
 module.exports = capitalize;

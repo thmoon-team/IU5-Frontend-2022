@@ -25,4 +25,4 @@ function getMinMax(str) {
 }
 
 module.exports = getMinMax;
-//console.log(getMinMax('4 и -6, 2, 1, может 9, 63, -134 и 566 ну и -5.8 и 3.11 а еще 5.]'));
+

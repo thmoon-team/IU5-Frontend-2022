@@ -15,4 +15,4 @@ function prettySum(arr) {
 }
 
 module.exports = prettySum;
-//console.log(prettySum([3, 2, 6, 5, 4, 1, 2]));
+
