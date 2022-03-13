@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
-
-    <body></body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Авиабилеты</title>
+    <style>
+        a, label {
+            color: aliceblue;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="head-text">Поиск авиабилетов</p>
+        <form>
+            <input type="text" placeholder="Откуда">
+            <input type="text" placeholder="Куда">
+            <input type="date" placeholder="Дата">
+            <input type="datetime-local" placeholder="Дата и время">
+        </form>
+        <button>Найти</button>
+        <br><br>
+        <p style="font-size: 30px;">Вход в личный кабинет</p>
+        <form>
+            <label>Электроная почта</label>
+            <input type="email"><br>
+            <label>Пароль</label>
+            <input type="password"><br>
+            <label>Сохранить пароль</label>
+            <input type="checkbox">
+            <input type="button" value="Войти">
+            <input type="file">
+            <input type="color">
+        </form>
+    </div><br>
+    <div>
+        <h1>Популярные направления</h1>
+        <img src="images/мадрид.jpg" alt="картинка1" height="100" width="200">
+        <p class="city">Мадрид</p>
+        <img src="images/berlin.jpg" alt="картинка2" height="400" width="600">
+        <p class="city">Берлин</p>
+        <img src="images/париж.jpg" alt="картинка3" height="250" width="300">
+        <p class="city">Париж</p>
+        <img src="images/рим.jpg" alt="картинка4" height="300" width="300">
+        <p class="city">Рим</p>
+        <img src="images/милан.jpg" alt="картинка5" height="200" width="350">
+        <p class="city">Милан</p>
+        <table id="table-id">
+            <tr><th>Маршрут</th><th>Цена</th><th>Авиакомпания</th></tr>
+            <tr> <td>Москва - Рим</td><td>от 10000</td><td>Аэрофлот</td></tr>
+            <tr><td>Москва - Берлин</td><td>от 12000</td><td>Utair</td></tr>
+            <tr><td>Москва - Париж</td><td>от 14000</td><td>S7</td></tr>
+            <tr><td>Москва - Мадрид</td><td>от 20000</td><td>Победа</td></tr>
+            <td><td>Москва - Милан</td><td>от 17000</td><td>Россия</td></tr>
+        </table>
+    </div>
+    <div>
+        <h1>Мы не продаём авиабилеты, а помогаем найти самые дешёвые. Бесплатно.</h1>
+        <p class="main-text">
+            Авиасейлс — крупнейший поисковик авиабилетов в России. Мы сравниваем все доступные варианты перелётов по вашему запросу, а потом направляем вас для покупки на официальные сайты авиакомпаний и агентств.
+            Стоимость авиабилета, которую вы видите на Авиасейлс — финальная. Мы убрали все скрытые услуги и галочки.
+        </p>
+        <a href="https://www.aviasales.ru/?gclid=EAIaIQobChMI7t-MwqSg9gIVpgWiAx3uqwmCEAAYASAAEgI2bvD_BwE&params=MOW1" style="font-size: 30px">Ссылка на внешний ресурс</a>
+        <p class="text1">Выберите направление и даты с самым дешёвым перелётом на карте низких цен, а в личном кабинете вас ждут конкурсы и эксклюзивные скидки от партнёров.</p>
+        <p style="font-size: 5vw">Узнайте город за минуту. Подскажем, где жить, куда сходить и что посмотреть</p>
+        <p style="font-size: 180%">Выберите <sub>направление и даты с самым дешёвым перелётом</sub> на карте низких цен, а в личном кабинете вас ждут <sup>конкурсы и эксклюзивные скидки</sup> от партнёров</p>
+    </div>
+</body>
 </html>
