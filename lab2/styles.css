@@ -84,6 +84,7 @@ button:hover {
 }
 
 .navbar_tittle {
+    display:block;
     margin-right: 30px;
     margin-left: 5px;
     font-size: 24px;
@@ -442,25 +443,40 @@ header_button_inherit {
 
 /*для мобилок */
 @media screen and (max-width: 1080px) {
-    section {
+    .section {
         padding: 0 0 20px;
+        align-items: center;
     }
 
     .container {
         width: 90%;
     }
-    
+
+    .navbar {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .navbar_links, .navbar_buttons {
         display: flex;
         flex-direction: column;
+        margin: 5%;
     }
         
     .navbar_link {
         margin-left: 0;
+        margin: 5% 0;
+    }
+
+    .navbar_information {
+        display: flex;
+        flex-direction: column;
     }
 
     .navbar_tittle {
-        margin-right: 0;
+        display: block;
+        margin-right: 0 ;
     }
 
     .header {
