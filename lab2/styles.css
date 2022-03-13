@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --color-standart: #252B42;
+    --color-blue: #23A6F0;
+    --color-grey: #737373;
+}
+
+body {
+    font-family: Montserrat;
+    background: var(--color-standart);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+*, ::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+section {
+    padding: 40px 0 80px;
+}
+
+.section_head {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.section_tittle {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.section_discription {
+    color: var(--color-grey);
+}
+
+.section_discription_white {
+    color: #fff
+}
+
+
+
+button {
+    color: #fff;
+    border: none;
+    background: inherit;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+button:hover {
+    background-color: var(--color-grey);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+
+/*навигация */
+.navbar {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_information {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_tittle {
+    margin-right: 30px;
+    margin-left: 5px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar_links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_link {
+    margin-left: 20px;
+    transition: all .2s linear;
+}
+
+.navbar__link:hover {
+    color: var(--color-blue);
+}
+
+.navbar_buttons {
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar_loggin {
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.navbar_memmber {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-blue);
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar_memmber button {
+    background-color: inherit;
+    margin-right: 20px;
+}
+
+.header {
+    position: relative;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_vec3 {
+    position: absolute;
+    top: 5%;
+}
+
+.header_vec_1-2 {
+    position: absolute;
+    z-index: -1;
+}
+
+.header_tittle {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0 20%;
+}
+
+.header_subtitle {
+    margin: 20px 20%;
+}
+
+.header_buttons > button {
+    padding: 10px 20px;
+    margin: 0 20%;
+    border-radius: 30px;
+}
+
+.header_button_blue {
+    background-color: var(--color-blue);
+    margin-right: 20px;
+}
+
+header_button_inherit {
+    border: 1px solid #fff;
+}
+
+
+.strategy__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.strategy__card {
+    width: 32%;
+    padding: 20px;
+    border: 1px solid #fff;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__info {
+    margin-left: 15px;
+}
+
+.card__title {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+.reviews {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.review {
+    background-color: #fff;
+    padding: 30px 15%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: #000;
+    text-align: center;
+}
+
+.review__name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.review > * {
+    margin-bottom: 20px;
+}
+
+    .review > *:last-child {
+        margin-bottom: 0;
+    }
+
+
+
+.app__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.app__card {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 24%;
+    cursor: pointer;
+}
+
+.card__title-app {
+    margin-bottom: 0;
+}
+
+
+
+.pricings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pricing {
+    background-color: #fff;
+    padding: 35px;
+    width: 45%;
+    border-radius: 15px;
+    color: var(--color-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pricing__info {
+    width: 50%;
+}
+
+.pricing__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.pricing__subtitle {
+    color: #000
+}
+
+.pricing__right {
+    width: 40%;
+}
+
+.pricing__sum {
+    display: flex;
+    justify-content: center;
+}
+
+.pricing__sum-count {
+    font-size: 48px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.pricing__cum-month {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.pricing__btn {
+    background-color: var(--color-blue);
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-weight: 700;
+    border-radius: 10px
+}
+
+
+
+
+
+.branches {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.branches__info {
+    width: 45%;
+}
+
+.branches__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.branches__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.form {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #000
+}
+
+.form__body {
+    padding: 40px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form__img-mobile {
+    display: none;
+}
+
+    .form__img-mobile > img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+.form__title {
+    font-size: 32px;
+    font-weight: 700;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.form__input > input, .form__input > select {
+    width: 100%;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.form__button {
+    background-color: var(--color-blue);
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.section__form {
+    position: relative;
+}
+
+.block__white {
+    height: 60%;
+    width: 100%;
+    background-color: #fafafa;
+    position: absolute;
+    
+    bottom: 0;
+    z-index: -1;
+}
+
+
+.footer {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__item {
+    width: 20%;
+    margin-bottom: 30px;
+}
+
+.item__title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.item__text {
+    margin: 20px 0;
+}
+
+
+.item__link {
+    margin-top: 20px;
+}
+
+
+/*для мобилок */
+@media screen and (max-width: 1080px) {
+    section {
+        padding: 0 0 20px;
+    }
+
+    .container {
+        width: 90%;
+    }
+    
+    .navbar_links, .navbar_buttons {
+        display: flex;
+        flex-direction: column;
+    }
+        
+    .navbar_link {
+        margin-left: 0;
+    }
+
+    .navbar_tittle {
+        margin-right: 0;
+    }
+
+    .header {
+        display: block;
+    }
+
+    .header_info {
+        text-align: center;
+    }
+
+    .header_buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header_button_blue {
+        margin-right: 0;
+    }
+
+    header_button_inherit {
+        margin: 20px 0;
+    }
+
+    .header_image {
+        display: block;
+        margin: 10% 20%;
+        max-width: 100%;
+        height: auto;
+        align-items:center;
+    }
+
+    .strategy__card {
+        width: 45%;
+    }
+
+    .app__card {
+        width: 45%;
+    }
+
+    .app__cards {
+        justify-content: center;
+    }
+
+    .pricings {
+        justify-content: center;
+    }
+
+    .pricing {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .branches__info {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    .branches__title {
+        line-height: 1.3;
+        font-size: 32px;
+    }
+
+    .block__white {
+        display: none;
+    }
+
+    .form {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .form__body {
+        width: 100%;
+    }
+
+    .form__img {
+        display: none;
+    }
+
+    .form__img-mobile {
+        display: block;
+    }
+
+    .form__input {
+        margin-bottom: 20px;
+    }
+}
