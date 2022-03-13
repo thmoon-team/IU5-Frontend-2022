@@ -10,18 +10,18 @@
 // исправление
 
 function getMinMax(str) {
-    let regx = str.match(/-?\d+/g).map(Number);
+    let regx = str.match(/-?\d+/g).map((str) => parseInt(str));
 // match() возвращает получившиеся совпадения при сопоставлении строки с регулярным выражением
 // map() создаёт новый массив с результатом вызова указанной функции для каждого элемента массива
-    let max = 0
+    let max = regx[0]
     let min = regx[0]
     for (let i = 0; i < regx.length; i++) {
-        if (max > regx[i])
+        if (max < regx[i])
             max = regx[i]
-        else if (min < regx[i])
+        else if (min > regx[i])
             min = regx[i]
     }
-    return {'min:': min, 'max:': max};
+    return {'min': min, 'max': max};
 }
 
 module.exports = getMinMax;
