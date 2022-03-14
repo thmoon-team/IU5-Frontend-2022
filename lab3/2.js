@@ -8,7 +8,28 @@
  * '4 и -6, 2, 1, может 9, 63, -134 и 566]' -> {min: -134, max: 566}
  */
 function getMinMax(str) {
-    // code here
+    let arr = str.split(' ')
+    for (let i = 0; i < arr.length; i++){
+        arr[i] = parseFloat(arr[i]);
+    }
+    for (let i = 0; i < arr.length; i++){
+        if(isNaN(arr[i])){
+            arr.splice(i,1);
+        }
+    }
+
+
+    const max = Math.max(...arr);
+    const min = Math.min(...arr);
+
+
+    return {max, min};
 }
 
+
 module.exports = getMinMax;
+
+
+
+
+
