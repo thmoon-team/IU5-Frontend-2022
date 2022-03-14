@@ -6,7 +6,10 @@
  * 'я Вижу солнце' -> 'Я Вижу Солнце'
  */
 function capitalize(str) {
-    // code here
+    function lowerToHyphenUpper(match) {
+        match[0] = match[0].toUpperCase()
+        return match[0].toUpperCase() + match.slice(1);
+    }
+    return str.replace(/[А-ЯЁа-яёa-zA-Z]+/g, lowerToHyphenUpper)
 }
-
 module.exports = capitalize;
