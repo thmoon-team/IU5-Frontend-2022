@@ -19,20 +19,27 @@ test("getAnagramms 3", () => {
     expect(getAnagramms([])).toEqual([]);
 });
 test("getAnagramms 4", () => {
-    expect(getAnagramms(["мир", "222"])).toEqual([["222"], ["мир"]]);
+    expect(getAnagramms(["мир", "222"])).toEqual([["мир"], ["222"]]);
 });
 
 test("isPalindrome 1", () => {
     expect(isPalindrome("мир")).toBe(false);
 });
+
 test("isPalindrome 2", () => {
     expect(isPalindrome("acddwa")).toBe(false);
 });
+
 test("isPalindrome 3", () => {
     expect(isPalindrome("awddwa")).toBe(true);
 });
+
 test("isPalindrome 4", () => {
     expect(isPalindrome("a")).toBe(true);
+});
+
+test("isPalindrome 5", () => {
+    expect(isPalindrome("")).toBe(true);
 });
 
 test("rle 1", () => {
