@@ -8,9 +8,8 @@
  */
 
 function multiplyArray(arr, n) {
-    let a = 3;
     for (let i = 0; i < arr.length; i++) {
-        if (typeof (arr[i]) == typeof(a)) {
+        if (typeof (arr[i]) == typeof(3)) {
             arr[i] = arr[i]*n;
         }
     }
