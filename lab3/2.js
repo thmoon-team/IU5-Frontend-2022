@@ -23,7 +23,6 @@ function getMinMax(str) {
             if (bufferOut.max < Number(buff)) {
                 bufferOut.max = Number(buff);
             }
-
         }
         buff = "";
     }
