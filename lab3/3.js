@@ -7,11 +7,11 @@
  * [1, 2, 3, 'ddd', {min: 1}, 22, false], 2 -> [2, 4, 6, 'ddd', {min: 1}, 44, false]
  */
 
- function multiplyArray(arr, n) {
-    let result = [];
+function multiplyArray(arr, n) {
+    const result = [];
     arr.forEach((elem) => {
-        if (typeof(elem) == 'number') {
-            elem = elem*n;
+        if (typeof elem == "number") {
+            elem = elem * n;
         }
         result.push(elem);
     });
