@@ -16,4 +16,5 @@ function multiplyArray(arr, n) {
     return arr;
 }
 
+
 module.exports = multiplyArray;

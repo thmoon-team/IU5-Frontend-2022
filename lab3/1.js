@@ -1,5 +1,3 @@
-const res = require("express/lib/response");
-
 /**
  * Напишите функцию capitalize(str),
  * которая вернет строку str, в которой каждое слово начинается с заглавной буквы.
