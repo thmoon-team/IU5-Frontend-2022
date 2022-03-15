@@ -17,7 +17,17 @@
 */
 
 function get1DArray(arr) {
-    //code here
+    let n_arr = [];
+    (function flat(arr) {
+        arr.forEach(function(el) {
+            if (Array.isArray(el)) {
+                flat(el);
+            } else {
+                n_arr.push(el);
+            }
+        });
+    })(arr);
+    return n_arr;
 }
 
 module.exports = get1DArray;

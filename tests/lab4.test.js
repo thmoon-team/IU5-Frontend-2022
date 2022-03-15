@@ -5,7 +5,9 @@ const get1DArray = require("../lab4/4.js");
 const checkBrackets = require("../lab4/5.js");
 
 test("getAnagramms 1", () => {
-    expect(getAnagramms(["мир", "Рим"])).toEqual([["мир", "Рим"]]);
+    expect(getAnagramms(["мир", "Рим"])).toEqual([
+        ["мир", "Рим"]
+    ]);
 });
 test("getAnagramms 2", () => {
     expect(getAnagramms(["мир", "Рим", "сирота", "Ариост", "мри", "пва", "лор", "авп"])).toEqual([
@@ -19,7 +21,10 @@ test("getAnagramms 3", () => {
     expect(getAnagramms([])).toEqual([]);
 });
 test("getAnagramms 4", () => {
-    expect(getAnagramms(["мир", "222"])).toEqual([["мир"], ["222"]]);
+    expect(getAnagramms(["мир", "222"])).toEqual([
+        ["мир"],
+        ["222"]
+    ]);
 });
 
 test("isPalindrome 1", () => {
@@ -57,13 +62,16 @@ test("get1DArray 1", () => {
         get1DArray([
             1,
             2,
-            "aa",
-            [1, 2, 3],
+            "aa", [1, 2, 3],
             [
                 [1, 2],
                 [1, 2],
             ],
-            [[[1, 2, [1, 2, [2]]], 3], 4],
+            [
+                [
+                    [1, 2, [1, 2, [2]]], 3
+                ], 4
+            ],
         ])
     ).toEqual([1, 2, "aa", 1, 2, 3, 1, 2, 1, 2, 1, 2, 1, 2, 2, 3, 4]);
 });
@@ -71,18 +79,18 @@ test("get1DArray 2", () => {
     expect(get1DArray([])).toEqual([]);
 });
 
-// test('checkBrackets 1', () => {
-//     expect(checkBrackets('[(<>)]')).toBe(true);
-// });
-// test('checkBrackets 2', () => {
-//     expect(checkBrackets('([)]()<>')).toBe(false);
-// });
-// test('checkBrackets 3', () => {
-//     expect(checkBrackets('[[()]]([])<>')).toBe(true);
-// });
-// test('checkBrackets 4', () => {
-//     expect(checkBrackets('[]')).toBe(true);
-// });
-// test('checkBrackets 5', () => {
-//     expect(checkBrackets('')).toBe(true);
-// });
+test('checkBrackets 1', () => {
+    expect(checkBrackets('[(<>)]')).toBe(true);
+});
+test('checkBrackets 2', () => {
+    expect(checkBrackets('([)]()<>')).toBe(false);
+});
+test('checkBrackets 3', () => {
+    expect(checkBrackets('[[()]]([])<>')).toBe(true);
+});
+test('checkBrackets 4', () => {
+    expect(checkBrackets('[]')).toBe(true);
+});
+test('checkBrackets 5', () => {
+    expect(checkBrackets('')).toBe(true);
+});
