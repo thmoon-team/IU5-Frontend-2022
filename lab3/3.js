@@ -12,4 +12,3 @@ function multiplyArray(arr, n) {
 }
 
 module.exports = multiplyArray;
-

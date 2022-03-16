@@ -15,4 +15,3 @@ function prettySum(arr) {
 }
 
 module.exports = prettySum;
-

@@ -7,6 +7,7 @@
  * Примеры:
  * '4 и -6, 2, 1, может 9, 63, -134 и 566]' -> {min: -134, max: 566}
  */
+
 function getMinMax(str) {
     let numbers = [];
     let start = 0;
@@ -25,4 +26,3 @@ function getMinMax(str) {
 }
 
 module.exports = getMinMax;
-
