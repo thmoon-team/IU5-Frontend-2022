@@ -9,6 +9,7 @@ function capitalize(str) {
     let a = str.split(" ");
     let n=a.length;
     str= "";
+    
     for(let i=0; i<n; i++){
         let word = a[i];
         str=str +word[0].toUpperCase() +word.slice(1);
