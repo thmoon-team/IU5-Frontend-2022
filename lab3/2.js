@@ -20,9 +20,8 @@ function getMinMax(str) {
         if((str[i] < min) && (typeof str[i] == "number")) 
             min = str[i];
     }
-    return {'min': min, 'max': max};
+    return {'min': Number(min), 'max': Number(max)};
 
 }
 
-console.log(getMinMax('4 и -6, 2, 1, может 9, 63, -134 и 566]'));
 module.exports = getMinMax;
