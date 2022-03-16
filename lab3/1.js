@@ -5,8 +5,15 @@
  * 'я вижу солнце' -> 'Я Вижу Солнце'
  * 'я Вижу солнце' -> 'Я Вижу Солнце'
  */
+
 function capitalize(str) {
-    // code here
-}
+    if (str.length) str = str.replaceAt(0, str.charAt(0).toUpperCase());
+    let step = 0;
+    for (let pos = 1; step != -1; pos += 1 + step) {
+        str = str.replaceAt(pos, str.charAt(pos).toUpperCase());
+        step = str.slice(pos).search(/\s\S/);
+    }
+    return str;
+} 
 
 module.exports = capitalize;
