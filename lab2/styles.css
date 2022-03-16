@@ -5,8 +5,7 @@
    }
 
 body{
-    width: 100%;
-    height: 100%;
+    /*----*/
 }
 
 header{
@@ -23,6 +22,7 @@ header .top{
 
 header .logo{
     max-width: 186px;
+    padding-top: 20px;
 }
 
 img{
@@ -31,10 +31,11 @@ img{
 
 header ul{
     margin: 0 auto;
-    margin-right: 30px;
-    justify-content: center;
+    max-width: 388px;
+    height: 47px;
+    padding-top: 46px;
     text-align: center;
-    width: 388px;
+    white-space: nowrap;
 }
 
 header .menu_top{
@@ -43,12 +44,12 @@ header .menu_top{
 
 header .menu_top li{
     display: inline-block;
-    margin-left: 8%;
+    margin-left: 51px;
 }
 
 header .menu_top li a{
-    display: inline-block;
     text-decoration: none;
+    align-items: center;
     color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -65,12 +66,13 @@ header .menu_top li a:hover{
     color: #37BDA6;
 }
 
-header .buttons{
+header .button{
     margin: 0 auto;
     margin-right: 0px;
+    padding-top: 33px;
 }
 
-header .buttons >a{
+header .button >a{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -108,7 +110,7 @@ header .btn_light:hover{
 *, *::before, *::after {
     box-sizing: border-box;
 } 
-*/
+
 
 .nav-trigger + label, .site-wrap {
     transition: right 0.2s;
@@ -122,4 +124,69 @@ label[for="nav-trigger"] {
     height: fit-content;
     width: 44px;
     background-size: contain;
+}*/
+
+header p{
+    margin: 0 auto;
+    align-items: center;
+}
+
+header .top_title{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 66px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    width: 631px;
+    padding-top: 10%;
+}
+
+header .text1{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #e5e5e5;
+    padding-top: 27px;
+}
+
+/*--------------Медиа запросы--------------*/
+
+@media screen and (max-width: 647px)  {
+    header .top_title {
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 46px;
+        line-height: 57px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+        width: 307px;
+        padding-top: 10%;
+    }
+
+    header .text1{
+        width: 334px;
+    }
+
+header .buttons{
+    display: flex;
+    display: inline-block;
+}
+
+header .btn_2{
+    display: flex;
+    display: inline-block;
+}
+    
 }
