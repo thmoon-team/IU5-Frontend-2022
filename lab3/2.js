@@ -11,8 +11,7 @@ function getMinMax(str) {
     let min;
     let max;
     str = str.split(/[\ :!&?;,\]]/);
-    min = 1000000000;
-    max = -1000000000;
+    min = max = str[0];
 
     for(let i = 1; i < str.length; i++){
         str[i] = Number(str[i]);
@@ -25,4 +24,5 @@ function getMinMax(str) {
 
 }
 
+console.log(getMinMax('4 и -6, 2, 1, может 9, 63, -134 и 566]'));
 module.exports = getMinMax;
