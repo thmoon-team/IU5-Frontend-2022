@@ -18,7 +18,7 @@ function findAllEntries(arr, el) {
 function getAnagramms(arr) {
     const sortedEntries = arr.map((word) => word.toLowerCase().split("").sort().join(""));
     const result = [];
-    Array.from(new Set(sortedEntries)).map((entry) => result.push(findAllEntries(sortedEntries, entry)));
+    Array.from(new Set(sortedEntries)).forEach((entry) => result.push(findAllEntries(sortedEntries, entry)));
     return result.map((entries) => entries.map((index) => arr[index]));
 }
 
