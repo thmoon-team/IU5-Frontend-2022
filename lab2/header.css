@@ -1,0 +1,23 @@
+.header-row{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-header{
+    margin-left:190px;
+
+}
+
+.header-nav{
+font-weight:500;
+}
+
+.header-nav ul{
+    display:flex; 
+}
+
+.header-nav li{
+    margin-right:51px;
+
+}

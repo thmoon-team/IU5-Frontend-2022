@@ -9,6 +9,34 @@
  */
 function getMinMax(str) {
     // code here
+    let strr = str.replace(/[^0-9-.]/g,' ');
+    let mas = strr.split(" ");
+    let max_x = mas[0];
+    let min_x = mas[0];
+    let sdr = [];
+    let sum = 0;
+    max_x = Number(max_x);
+    min_x = Number(min_x);
+    for (let num = 1; num < mas.length; num++)
+    {
+
+        if (mas[num]/mas[num] == 1 ){
+
+            mas[num] = Number(mas[num]);
+
+            if (max_x < mas[num] ){
+
+                max_x = mas[num];
+            }
+            if (min_x > mas[num]){
+
+                min_x = mas[num];
+            }
+        }
+    }
+    return {min: min_x,
+        max:max_x}
+
 }
 
 module.exports = getMinMax;
