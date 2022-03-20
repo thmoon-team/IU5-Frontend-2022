@@ -8,6 +8,11 @@
  */
 function isPalindrome(str) {
     //code here
+    for (var i = 0, n = str.length - 1; i < n; i++, n--) {
+        if(str[i] != str[n])
+          return false;
+   }
+   return true;
 }
 
 module.exports = isPalindrome;

@@ -12,6 +12,14 @@
 
 function checkBrackets(str) {
     //code here
+    //делали код вместе с NeliOdei(по этому код одинаковый), считаю решение гениальным и простым. 
+     
+    while (str.includes("()") ||  str.includes("[]") || str.includes("<>")) {
+        str = str.replace("()", "");
+        str = str.replace("[]", "");
+        str = str.replace("<>", "");
+      }
+      return((str.length == 0)? true : false)
 }
 
 module.exports = checkBrackets;
