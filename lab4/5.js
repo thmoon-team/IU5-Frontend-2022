@@ -11,7 +11,18 @@
  */
 
 function checkBrackets(str) {
-    //code here
+    if (str.length % 2) return false;
+    let queue = [];
+    for (elem of str) {
+        if ('[(<'.includes(elem)) {
+            queue.push(elem === '[' ? ']' : elem === '(' ? ')' : '>');
+            continue;
+        }
+        elem === queue[queue.length - 1] ? queue.pop() : elem = '';
+        if (!elem) return false;
+    }
+    return true;
 }
 
 module.exports = checkBrackets;
+console.log(checkBrackets('[(()[])<(<>)>]'));

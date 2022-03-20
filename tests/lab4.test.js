@@ -71,18 +71,18 @@ test("get1DArray 2", () => {
     expect(get1DArray([])).toEqual([]);
 });
 
-// test('checkBrackets 1', () => {
-//     expect(checkBrackets('[(<>)]')).toBe(true);
-// });
-// test('checkBrackets 2', () => {
-//     expect(checkBrackets('([)]()<>')).toBe(false);
-// });
-// test('checkBrackets 3', () => {
-//     expect(checkBrackets('[[()]]([])<>')).toBe(true);
-// });
-// test('checkBrackets 4', () => {
-//     expect(checkBrackets('[]')).toBe(true);
-// });
-// test('checkBrackets 5', () => {
-//     expect(checkBrackets('')).toBe(true);
-// });
+test('checkBrackets 1', () => {
+    expect(checkBrackets('[(<>)]')).toBe(true);
+});
+test('checkBrackets 2', () => {
+    expect(checkBrackets('([)]()<>')).toBe(false);
+});
+test('checkBrackets 3', () => {
+    expect(checkBrackets('[[()]]([])<>')).toBe(true);
+});
+test('checkBrackets 4', () => {
+    expect(checkBrackets('[]')).toBe(true);
+});
+test('checkBrackets 5', () => {
+    expect(checkBrackets('')).toBe(true);
+});

@@ -17,7 +17,18 @@
 */
 
 function get1DArray(arr) {
-    //code here
+    return arr.flat(Infinity);
 }
 
 module.exports = get1DArray;
+console.log(get1DArray([1, 2, 'aa', [1, 2, 3],
+[
+    [1, 2],
+    [1, 2]
+],
+[
+    [
+        [1, 2, [1, 2, [2]]], 3
+    ], 4
+]
+]));
