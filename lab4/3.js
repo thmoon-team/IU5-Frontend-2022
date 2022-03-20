@@ -24,6 +24,7 @@ function rle(str) {
     }
     
     return str_result.slice(0, str_result.length - 1);
+    
 }
 
 module.exports = rle;

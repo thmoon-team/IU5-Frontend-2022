@@ -38,6 +38,7 @@ function checkBrackets(str) {
     }
 
     return check.length == 0
+    
 }
 
 module.exports = checkBrackets;
