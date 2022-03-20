@@ -16,6 +16,7 @@
 ]; ---> [1, 2, "aa", 1, 2, 3, 1, 2, 1, 2, 1, 2, 1, 2, 2, 3, 4]
 */
 
+
 function get1DArray(arr) {
     return arr.flat(Infinity)
 }

@@ -18,6 +18,7 @@ function checkBrackets(str) {
     let open_index          // индекс откр. 
     let close_index         // индекс закр.
 
+    
     for(let i = 0; i < str_arr.length; i++) {
         
         open_index = open.indexOf(str_arr[i])
