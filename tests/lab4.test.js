@@ -19,7 +19,7 @@ test("getAnagramms 3", () => {
     expect(getAnagramms([])).toEqual([]);
 });
 test("getAnagramms 4", () => {
-    expect(getAnagramms(["мир", "222"])).toEqual([["мир"], ["222"]]);
+    expect(getAnagramms(["мир", "222"])).toEqual([["222"], ["мир"]]);
 });
 
 test("isPalindrome 1", () => {

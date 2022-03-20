@@ -13,9 +13,7 @@ function getAnagramms(arr) {
        res[key] = res[key] ? [...res[key], arr[i]] : [arr[i]]
     }
 
-    return Object.keys(res)
-    .filter(key => res[key].length > 1)
-    .map(key => res[key])
+    return Object.keys(res).map(key => res[key])
 }
 
 module.exports = getAnagramms;
