@@ -17,7 +17,7 @@
 */
 
 function get1DArray(arr) {
-    //code here
+    return arr.flat(Infinity)
 }
 
 module.exports = get1DArray;
