@@ -8,7 +8,19 @@
  */
 
 function rle(str) {
-    //code here
+    let result = ''
+    let count = 1
+
+    for (let i = 0; i < str.length; ++i) {
+        if (str[i] !== str[i+1]) {
+            result += count > 1 ? `${str[i]}${count}` : `${str[i]}`
+            count = 1
+        } else {
+            count++
+        }
+    }
+
+    return result
 }
 
 module.exports = rle;

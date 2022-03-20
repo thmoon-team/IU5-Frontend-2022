@@ -17,7 +17,13 @@
 */
 
 function get1DArray(arr) {
-    //code here
+    let res = []
+
+    for (let el of arr) {
+        res = Array.isArray(el) ? [...res, ...get1DArray(el)] : [...res, el]
+    }
+
+    return res
 }
 
 module.exports = get1DArray;
