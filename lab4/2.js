@@ -8,6 +8,8 @@
  */
 function isPalindrome(str) {
     //code here
+    if (str === str.split("").reverse().join("")) return true
+    return false
 }
 
 module.exports = isPalindrome;
