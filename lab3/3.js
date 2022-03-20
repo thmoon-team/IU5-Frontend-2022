@@ -8,7 +8,14 @@
  */
 
 function multiplyArray(arr, n) {
-    // code here
+    const result = [];
+    arr.forEach((elem) => {
+        if (typeof elem == "number") {
+            elem = elem * n;
+        }
+        result.push(elem);
+    });
+    return result;
 }
 
 module.exports = multiplyArray;
