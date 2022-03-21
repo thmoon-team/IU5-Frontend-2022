@@ -11,5 +11,4 @@ function rle(str) {
     return (str.match(/([\w])\1*/g) || []).map((e) => (e.length === 1 ? e : e.charAt(0) + e.length)).join("");
 }
 
-console.log(rle("BCCADDEEEBB"));
 module.exports = rle;
