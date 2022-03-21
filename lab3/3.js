@@ -8,7 +8,15 @@
  */
 
 function multiplyArray(arr, n) {
-    // code here
+    let res = arr.map(function(item) {
+        if ((typeof item) == "number") {
+            return item*n;
+        }
+        else {
+            return item;
+        }
+    });
+    return res;
 }
 
 module.exports = multiplyArray;
