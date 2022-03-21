@@ -11,7 +11,22 @@
  */
 
 function checkBrackets(str) {
-    //code here
+    const stack = [];
+    const openBrackets = ['(', '[', '<'];
+    const closeBrackets = [')', ']', '>'];
+    for (const bracket of str) {
+        if (openBrackets.includes(bracket)) {
+            stack.push(bracket);
+        }
+        if (closeBrackets.includes(bracket)) {
+            if (stack.length != 0 && stack[stack.length - 1] === openBrackets[closeBrackets.indexOf(bracket)]) {
+                stack.pop();
+            } else {
+                return false;
+            }
+        }
+    }
+    return !stack.length;
 }
 
 module.exports = checkBrackets;
