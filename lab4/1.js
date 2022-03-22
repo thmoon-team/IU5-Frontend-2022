@@ -8,7 +8,7 @@
 function getAnagramms(arr) {
     let key
     let obj = {}
-    for (let el of Arr) {                      
+    for (let el of arr) {                      
         key = el.toLowerCase().split('').sort().join('');
         if (obj[key]) {                  
             obj[key] = [...obj[key], el]
