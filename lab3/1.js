@@ -6,6 +6,10 @@
  * 'я Вижу солнце' -> 'Я Вижу Солнце'
  */
 
+ String.prototype.replaceAt = function(index, replacement) {
+    return this.substring(0, index) + replacement + this.substring(index + replacement.length);
+}
+
 function capitalize(str) {
     if (str.length) str = str.replaceAt(0, str.charAt(0).toUpperCase());
     let step = 0;
