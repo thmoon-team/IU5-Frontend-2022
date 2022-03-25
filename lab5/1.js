@@ -10,11 +10,10 @@ if (!Array.prototype.myMap) {
     Array.prototype.myMap = function(callback) {
         const newArr = []
         if (this.length != 0) {
-            newArr.push(callback(this[0]))
             this.reduce(function(previousValue, currentValue) {
                 newArr.push(callback(currentValue))
                 return currentValue
-            })
+            }, 0)
         }
         return newArr
     };

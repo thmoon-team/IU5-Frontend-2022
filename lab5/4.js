@@ -13,20 +13,21 @@
  * memozedAdd(2) -> {cache: true, result: 4}
  */
 
-function memoize(obj) {
-    if (typeof obj === 'function') {
-        this.func = obj
-        return memoize
-    } else if (typeof obj === 'number') {
-        const num = this.func(obj)
-        if (num === this.result) {
-            this.cache = true
+function memoize(func) {
+    const cacheObj = { cache: false, result: { n: NaN, res: NaN } }
+    return function(n) {
+        if (n == cacheObj.result.n) {
+            cacheObj.cache = true
+                //return cacheObj.result.res -----по идее это нужно возвращать чтобы использовать функцию add и по назначению и эффективно
+            return { cache: cacheObj.cache, result: cacheObj.result.res } // а это возвращаю чтобы тесты прошли
         } else {
-            this.cache = false
-            this.result = num
+            cacheObj.cache = false
+            cacheObj.result.n = n
+            cacheObj.result.res = func(n)
+                //return cacheObj.result.res -----по идее это нужно возвращать чтобы использовать функцию add и по назначению и эффективно
+            return { cache: cacheObj.cache, result: cacheObj.result.res } // а это возвращаю чтобы тесты прошли
         }
     }
-    return { cache: this.cache, result: this.result }
 }
 /*
 const add = (a) => a * 2;

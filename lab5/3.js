@@ -8,10 +8,16 @@
  */
 
 function customBind(f, context) {
-    const newFunc = f.bind(context)
+    this.__proto__ = context
+    newFunc = function(n) {
+        return f(n)
+    }
     return newFunc
 }
 
 
-//console.log(customBind(function() { return this.a + this.b }, { a: 1, b: 2 })())
+
+//console.log(customBind(function(n) { return this.a + this.b + n }, { a: 1, b: 2 })(6))
+
+
 module.exports = customBind;
