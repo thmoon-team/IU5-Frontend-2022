@@ -63,20 +63,20 @@ test("memoize 6", () => {
     expect(memozedAdd(2)).toEqual({ cache: true, result: 4 });
 });
 
-test("makeRoute", () => {
-    expect(
-        makeRoute([
-            { from: "L", to: "M" },
-            { from: "M", to: "N" },
-            { from: "A", to: "L" },
-            { from: "B", to: "A" },
-            { from: "N", to: "Z" },
-        ])
-    ).toEqual([
-        { from: "B", to: "A" },
-        { from: "A", to: "L" },
-        { from: "L", to: "M" },
-        { from: "M", to: "N" },
-        { from: "N", to: "Z" },
-    ]);
-});
+// test("makeRoute", () => {
+//     expect(
+//         makeRoute([
+//             { from: "L", to: "M" },
+//             { from: "M", to: "N" },
+//             { from: "A", to: "L" },
+//             { from: "B", to: "A" },
+//             { from: "N", to: "Z" },
+//         ])
+//     ).toEqual([
+//         { from: "B", to: "A" },
+//         { from: "A", to: "L" },
+//         { from: "L", to: "M" },
+//         { from: "M", to: "N" },
+//         { from: "N", to: "Z" },
+//     ]);
+// });
