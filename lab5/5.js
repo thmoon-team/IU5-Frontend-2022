@@ -22,7 +22,22 @@
  */
 
 function makeRoute(arr) {
-    //code here
+    let result=[];
+    for (const el of arr){
+        if (arr.every(el2=>el.from!==el2.to)){
+             result.push(el);
+             break;
+        };
+    };
+    while (result.length<arr.length){
+        for (line of arr){
+            if (line.from===result[result.length-1].to){
+                result.push(line);
+                break;
+            }
+        }
+    }
+    return result;
 }
 
 module.exports = makeRoute;
