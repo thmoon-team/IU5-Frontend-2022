@@ -14,7 +14,23 @@
  */
 
 function memoize(func) {
-    //code here
+    let context = {args: [], result: 0, func: func, 
+        run(...args) {
+            if (this.args && args.every((value, index) => value === this.args[index]))
+                return {cache: true, result: this.result};
+            this.result = func(...args);
+            this.args = args;
+            return {cache: false, result: this.result};
+        }}
+    return context.run;
 }
 
 module.exports = memoize;
+/*const add = (a) => a * 2;
+const memozedAdd = memoize(add);
+console.log(memozedAdd(1));
+console.log(memozedAdd(1));
+console.log(memozedAdd(2));
+console.log(memozedAdd(1));
+console.log(memozedAdd(2));
+console.log(memozedAdd(2));*/
