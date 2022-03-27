@@ -30,4 +30,5 @@ function getMinMax(str) {
     return bufferOut;
 }
 
+
 module.exports = getMinMax;
