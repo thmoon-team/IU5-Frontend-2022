@@ -7,6 +7,7 @@
  * как считать: (3 + 6 + 4 + 2) * 2
  */
 
+
 function prettySum(arr) {
     let summ = 0;
     for (let i = 0; i < arr.length; i++) {
