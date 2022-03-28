@@ -13,7 +13,14 @@
  * console.log(curry(add)(1, 2, 3)); //6
  */
 function curry(f) {
-    //code here
+    return function curryNew(...args1) {
+        if (args1.length >= f.length) 
+          return f.apply(this, args1);
+        else 
+          return function(...args2) {
+            return curryNew.apply(this, args1.concat(args2));
+          }
+      };
 }
 
 module.exports = curry;

@@ -24,6 +24,4 @@ function getAnagramms(arr) {
     return res;
 }
 
-
 module.exports = getAnagramms;
-
