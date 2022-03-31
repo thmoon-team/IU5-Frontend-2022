@@ -1,0 +1,129 @@
+.figmaland{
+    padding-top: 51px;
+    padding-bottom:51px;
+    background-color: #FFFFFF;
+}
+
+.figmaland-content{
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 66px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: auto;
+    padding: 10px;
+    max-width: 765px;
+    font-style: normal;
+}
+
+.container2{
+    margin: 13px auto;
+    max-width: 1270px;
+
+}
+.services-body{
+
+    display: flex;
+
+}
+
+.services-column{
+    padding: 0px 15px;
+    display: flex;
+    border-radius: 31px;
+
+
+}
+
+.services-item{
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    border-radius: 10px;
+}
+.item-service{
+}
+.item-service_gradient{
+    background: linear-gradient(45deg,#37BDA6, #CB1AE8);
+}
+.item-service-title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 73%;
+    color:#000000;
+    padding: 10px;
+}
+
+.item-service-title_white{
+    color:#FFFFFF; font-weight: 700px;
+    font-size: 30px;
+    line-height: 33px;
+    padding: 10px;
+    letter-spacing: 0.1px;
+}
+
+.item-service-text_white{
+    color:#FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+
+.item-service-text{
+    color:#5C5C5C;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    padding: 10px;
+
+}
+
+.item-service-mtext{
+    color:#03D6F3;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+
+.item-service-mtext_white{
+    color:#ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    padding: 10px;
+
+}
+
+.btn6{
+
+    margin-bottom: 40px;
+
+}
+.column8{
+    padding-left: 10px;
+}
+
+
+@media(max-width: 1270px){
+    .services-body{
+        display:block;
+
+
+    }
+    .services-column{
+        margin-bottom: 64px;
+
+        padding: auto;
+    }
+}

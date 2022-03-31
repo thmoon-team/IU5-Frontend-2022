@@ -1,0 +1,90 @@
+.hr{
+    margin: 51px 0px;
+    width: 100%;
+    color: #CDCDCD;
+
+
+}
+
+.subscribe{
+    padding-top: 51px;
+    background-color: #FFFFFF;
+    padding-bottom: 51px;
+}
+
+.content7{
+    margin: 62px auto;
+    max-width: 500px;
+}
+
+.heading7{
+    margin: 10px auto;
+    padding-left: 10px;
+    font-size: 46px;
+    line-height: 57px;
+    line-height: 83%;
+    letter-spacing: 0.2px;
+    max-width: 300px;
+    font-weight: 500;
+}
+
+.mheading7{
+    margin: 27px auto;
+    max-width: 356px;
+    font-size: 18px;
+    line-height: 27px;
+    line-height: 100%;
+    letter-spacing: 0.2px;
+    color: #5C5C5C;
+    font-weight: 400;
+}
+
+.mailing{
+    display: flex;
+    margin-top: 69px;
+    padding-left: 20px;
+}
+
+.mail{
+    font-family: 'Roboto';
+    text-decoration: none;
+    font-size: 16px;
+    color: #5C5C5C;
+    font-weight: 700;
+    padding: 14px 28px;
+    background: #EFEFEF;
+    margin-right: 10px;
+    border-radius: 6px;
+    max-width: 284px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+.blue1{
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 500;
+    padding: 18px 46px;
+    background: #03D6F3;
+    margin-right: 22px;
+    border-radius: 39px;
+    max-width: 203px;
+    align-items: center;
+
+}
+
+@media(max-width: 550px){
+    .mailing{
+        display: block;
+        margin-left: 20px;
+    }
+    .mail{
+
+        padding: 23px 70px;
+    }
+    .blue1{
+        display:block;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
