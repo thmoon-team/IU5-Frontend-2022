@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css">
+        <title>Lab6</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class=" task task1" id="task1"></div>
+            <div class="task task2" id="task2">0</div>
+            <div class="task task3" id="task3">
+                <div class="choice" id="choise">Кастомный список</div>
+                <div class="dropdown" id="dropdown">
+                    <div value="1">1</div>
+                    <div value="2">2</div>
+                    <div value="3">3</div>
+                    <div value="4">4</div>
+                    <div value="4">4</div>
+                    <div value="4">4</div>
+                    <div value="4">4</div>
+                    <div value="4">4</div>
+                </div>
+            </div>
+            <div class="task task4" id="task4">
+                <div class="circle" id="circle"></div>
+            </div>
+
+            <button onclick="fetchData()">Запросить серии</button>
+            <div id="task5" class="task5">
+
+            </div>
+        </div>
+        
+
+        <script>
+            // первое задание
+
+            const task1 = document.getElementById('task1')
+            task1.addEventListener('click', (event) => {
+                const red = Math.random() * 255
+                const green = Math.random() * 255
+                const blue = Math.random() * 255
+
+                task1.style.backgroundColor = `rgb(${red},${green},${blue})`
+            })
+
+            // второе задание
+
+            let count = 0
+            let mouseOn = false
+            const task2 = document.getElementById('task2')
+
+            setInterval(() => {
+                mouseOn ? count++ : count
+                task2.innerText = `${count}`
+            }, 1000)
+
+            task2.addEventListener('mouseover', (event) => {
+                mouseOn = true
+            })
+            task2.addEventListener('mouseout', (event) => {
+                mouseOn = false
+            })
+
+            // третье задание
+
+            const task3 = document.getElementById('task3')
+            const dropdown = document.getElementById('dropdown')
+            const choise = document.getElementById('choise')
+            const options = dropdown.childNodes
+
+            for (option of options) {
+                option.addEventListener('click', (event) => {
+                    choise.innerText = event.target.innerText
+                })
+            }
+
+            choise.addEventListener('click', () => {
+                dropdown.classList.toggle('active')
+            })
+
+            // четвертое задание
+
+            const task4 = document.getElementById('task4')
+            const circle = document.getElementById('circle')
+
+
+            function mousePos(event) {
+                const x = event.offsetX - 30 > 0 ? event.offsetX - 30 : 0
+                const y = event.offsetY - 30 > 0 ? event.offsetY - 30 : 0
+
+                circle.style.transform = `translateX(${x}px) translateY(${y}px)`
+            }
+
+            circle.addEventListener('click', () => {
+                task4.addEventListener('mousemove', mousePos)
+            })
+
+
+            document.addEventListener('keydown', (event) => {
+                if (event.code === 'Escape') {
+                    circle.style.transform = 'translateX(0px) translateY(0px)'
+                    task4.removeEventListener('mousemove', mousePos)
+                }
+            })
+
+
+            const task5 = document.getElementById('task5')
+
+            function parseToHtml(data) {
+                console.log(data)
+                for (const el of data) {
+                    const container = `<div class='series'><span>${el.episode_id}</span><span>${el.title}</span><span>${el.series}</span></div>`
+                    task5.insertAdjacentHTML('beforeend', container)
+                }
+            }
+
+
+            function fetchData() {
+                fetch('https://www.breakingbadapi.com/api/episodes')
+                .then(data => data.json())
+                .then(data => parseToHtml(data))
+            }
+
+        </script>
+    </body>
+</html>
