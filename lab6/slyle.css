@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #c7e4eb;
+}
+
+.task{
+    flex-direction: column;
+    background: #c250f7;
+    margin: 15px;
+    font-size: 15px;
+}
+#taskOne {
+    height: 300px;
+    width: 300px;
+}
+h2{
+    margin: 0 auto;
+    text-align: center;
+    padding: 110px 0 0 0;
+    font-size: 68px;
+  }
+
+.timer {
+    flex-direction: column;
+    background: #c250f7;
+    margin: 15px;
+    font-size: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid 2px;
+    height: 150px;
+    width: 150px;
+    font-size: 100px;
+    border-radius: 10px;
+}
+
+
+#buttonForThree {
+    font-size: 40px;
+    width: 600px;
+    align-items: center;
+    background:  #c250f7;
+    border-radius: 5px;
+}
+
+.Dropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.list-visible {
+    max-height: 300px;
+    overflow: auto;
+    border: solid 1px #c402f5;
+    padding: 2px;
+}
+
+.item {
+    font-weight: 300;
+    font-size: 40px;
+    background:  #c250f7;
+    border: solid 1px #7400f9;
+    color: #000000;
+}
+
+#taskFour {
+    height: 800px;
+    width: 800px;
+    position: relative;
+    padding: 5px;
+}
+
+
+#infinity {
+    position: relative;
+    width: 53px;
+    height: 25px;
+}
+ 
+#infinity:before,
+#infinity:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;    
+    border: 5px solid rgb(68, 7, 100);
+    -moz-border-radius: 50px 50px 0 50px;
+         border-radius: 50px 50px 0 50px;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+ 
+#infinity:after {
+    left: auto;
+    right: 0;
+    -moz-border-radius: 50px 50px 50px 0;
+         border-radius: 50px 50px 50px 0;
+    -webkit-transform:rotate(45deg);
+       -moz-transform:rotate(45deg);
+        -ms-transform:rotate(45deg);
+         -o-transform:rotate(45deg);
+            transform:rotate(45deg);
+}
