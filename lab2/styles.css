@@ -1,9 +1,10 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-  }
+}
 
-
-body{
+body {
     position: relative;
     min-height: 100vh;
     margin: 0;
@@ -11,39 +12,54 @@ body{
 }
 
 div.scrollup {
-    position: fixed; /* фиксированная позиция */
-    color: #fff; /* цвет текста */
-    background-color: #286090; /* цвет заднего фона */
-    right: 20px; /* расстояние от правого края */
-    bottom: 0px; /* расстояние от нижнего края */
-    padding: 4px 10px; /* отступы до содержимого блока */
-    font-size: 20px; /* размер шрифта (иконки) */
-    border-top-left-radius: 4px; /* скругление верхнего левого угла */
-    border-top-right-radius: 4px; /* скругление верхнего правого угла */
-    cursor: pointer; /* форма курсора */
-    display: none; /* не отображать элемент */
-    text-align: center; /*выравнивание содержимого элемента по центру */
-  }
-  div.scrollup:hover {
-    background-color: #000; /* цвет заднего фона при наведении */
-  }
+    position: fixed;
+    /* фиксированная позиция */
+    color: #fff;
+    /* цвет текста */
+    background-color: #286090;
+    /* цвет заднего фона */
+    right: 20px;
+    /* расстояние от правого края */
+    bottom: 0px;
+    /* расстояние от нижнего края */
+    padding: 4px 10px;
+    /* отступы до содержимого блока */
+    font-size: 20px;
+    /* размер шрифта (иконки) */
+    border-top-left-radius: 4px;
+    /* скругление верхнего левого угла */
+    border-top-right-radius: 4px;
+    /* скругление верхнего правого угла */
+    cursor: pointer;
+    /* форма курсора */
+    display: none;
+    /* не отображать элемент */
+    text-align: center;
+    /*выравнивание содержимого элемента по центру */
+}
 
-:root{
+div.scrollup:hover {
+    background-color: #000;
+    /* цвет заднего фона при наведении */
+}
+
+:root {
     --text_font: 'Poppins', sans-serif;
 }
 
-.menu__buttons a{
+.menu__buttons a {
     text-decoration: none;
-    color:aliceblue;
+    color: aliceblue;
     transition-duration: 0.4s;
     cursor: pointer;
     filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
 }
-.menu__buttons a:hover{
-    color:#FFFFFF;
+
+.menu__buttons a:hover {
+    color: #FFFFFF;
 }
 
-.main__container{
+.main__container {
     min-height: 100vh;
     overflow: hidden;
     display: flex;
@@ -52,16 +68,12 @@ div.scrollup {
     justify-content: space-between;
     position: static;
     width: 100%;
-    height:fit-content;
+    height: fit-content;
     left: 0px;
     top: 0px;
-
     /* dark background */
-
     background: linear-gradient(230.95deg, #CB1AE8 -0.37%, #37BDA6 100%);
-
     /* Inside auto layout */
-
     flex: none;
     order: 0;
     align-self: stretch;
@@ -69,50 +81,43 @@ div.scrollup {
     margin: 0;
 }
 
-.main__head{
-    position:static;
+.main__head {
+    position: static;
     height: 120px;
     top: 0px;
     margin: 0 10vw;
-
-
     /* Inside auto layout */
-
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
-
-
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-
     font-family: var(--text_font);
-
     color: #FFFFFF;
 }
 
-.logo{
+.logo {
     margin-left: 40px;
     width: 208px;
     padding: 8px;
 }
 
-.menu{
-    display:flex;
+.menu {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     width: 388px;
     height: 48;
 }
 
-.button_vector{
-    display:flex;
+.button_vector {
+    display: flex;
     align-items: center;
 }
 
-#button__sign{
+#button__sign {
     width: 156px;
     height: 52px;
     border: 1px solid white;
@@ -121,7 +126,7 @@ div.scrollup {
     margin-right: 40px;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     font-family: var(--text_font);
     font-weight: 500;
     font-size: 16px;
@@ -129,14 +134,10 @@ div.scrollup {
     letter-spacing: 0.2px;
     box-sizing: border-box;
     /* shadow */
-
     filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
     border-radius: 39px;
     /* identical to box height, or 100% */
-
-
     /* light background */
-
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -147,8 +148,7 @@ div.scrollup {
     color: black;
 }
 
-
-.vector_menu{
+.vector_menu {
     display: none;
     flex-direction: row;
     align-items: center;
@@ -156,68 +156,51 @@ div.scrollup {
     width: 64px;
     height: 52px;
     margin-right: 16px;
-
 }
 
-.menu__buttons{
-
+.menu__buttons {
     font-family: var(--text_font);
     font-weight: 300;
     padding: 8px;
-
     font-style: normal;
     font-size: 15px;
     line-height: 27px;
-
     text-align: center;
     letter-spacing: 0.2px;
-
-
     color: #FFFFFF;
 }
 
-.content_main{
+.content_main {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 45px 0px;
-
-    position:static;
+    position: static;
     width: 60vw;
-
     height: 400px;
     top: 192px;
-
-
-
     /* Inside auto layout */
-
     flex: none;
     order: 1;
     flex-grow: 0;
 }
 
-.headline{
+.headline {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 10px;
-
     position: static;
     width: 60vw;
     height: 151px;
     left: 0px;
     top: 0px;
-
     /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
     margin: 7px 0px;
-
-
     font-family: var(--text_font);
     text-align: center;
     font-style: normal;
@@ -225,75 +208,61 @@ div.scrollup {
     font-size: 55px;
     line-height: 65px;
     /* or 119% */
-
     letter-spacing: 0.2px;
-
     /* light text */
-
     color: #FFFFFF;
 }
 
-.sub__headline{
+.sub__headline {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 10px;
-
     overflow: hidden;
     max-width: 50vw;
     height: 40px;
     /* Inside auto layout */
-
     flex: none;
     order: 1;
     flex-grow: 0;
     margin: 7px 0px;
-
     /* Sub Heading */
-
     font-family: var(--text_font);
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
     /* identical to box height, or 125% */
-
     text-align: center;
     letter-spacing: 0.2px;
-
     color: #E5E5E5;
-
 }
 
-.main-buttons{
+.main-buttons {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px;
-
     position: static;
-    width:fit-content;
+    width: fit-content;
     height: 52px;
-
-
     /* Inside auto layout */
-
     flex: none;
     order: 1;
     flex-grow: 0;
     margin: 64px 0px;
 }
 
-#button__get_st{
+#button__get_st {
     width: 184px;
     height: 52px;
     border: 1px solid white;
     color: #112D57;
-    background:#FFFFFF;
+    background: #FFFFFF;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     margin-right: 20px;
     font-style: normal;
     font-weight: 500;
@@ -303,14 +272,10 @@ div.scrollup {
     letter-spacing: 0.2px;
     box-sizing: border-box;
     /* shadow */
-
     filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.15));
     border-radius: 39px;
     /* identical to box height, or 100% */
-
-
     /* light background */
-
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -319,7 +284,7 @@ div.scrollup {
     filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.3));
 }
 
-#button__try{
+#button__try {
     width: 184px;
     height: 52px;
     border: 1px solid white;
@@ -327,7 +292,7 @@ div.scrollup {
     background: none;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     font-family: var(--text_font);
     font-style: normal;
     font-weight: 500;
@@ -336,14 +301,10 @@ div.scrollup {
     letter-spacing: 0.2px;
     box-sizing: border-box;
     /* shadow */
-
     filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.15));
     border-radius: 39px;
     /* identical to box height, or 100% */
-
-
     /* light background */
-
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -354,32 +315,26 @@ div.scrollup {
     color: black;
 }
 
-.datamax{
+.datamax {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px 12px;
-
-    position:static;
+    position: static;
     width: 65vw;
     margin-bottom: 44px;
     /* Inside auto layout */
-
     flex: none;
     order: 2;
     flex-grow: 0;
 }
 
-
-#datamax__png{
+#datamax__png {
     position: static;
     /* shadow */
-
     filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
     border-radius: 5px;
-
     /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -388,7 +343,7 @@ div.scrollup {
 
 /*Второй блок с карточками////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-.container_2{
+.container_2 {
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -396,21 +351,18 @@ div.scrollup {
     padding-top: 100px;
     position: static;
     width: 100vw;
-    height:fit-content;
-
+    height: fit-content;
     background: #FFFFFF;
 }
 
-.second_headline{
+.second_headline {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-
     width: 800px;
     max-width: 65vw;
-    height:fit-content;
-
+    height: fit-content;
     font-family: var(--text_font);
     font-style: normal;
     font-weight: 500;
@@ -418,53 +370,46 @@ div.scrollup {
     line-height: 57px;
     text-align: center;
     letter-spacing: 0.2px;
-
     color: #000000;
 }
 
-.content_2{
+.content_2 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
     margin-top: 100px;
     margin-bottom: 120px;
     width: 1264px;
-    height:fit-content;
+    height: fit-content;
     max-width: 100vw;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 60px 40px;
     overflow: hidden;
-
     width: 400px;
-    height:fit-content;
-
+    height: fit-content;
     background: #FFFFFF;
     border: 1px solid #DEDEDE;
     box-sizing: border-box;
     /* shadow */
-
     box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
 }
 
-#card_sec{
+#card_sec {
     background: linear-gradient(230.95deg, #CB1AE8 -0.37%, #37BDA6 100%);
     border: 1px solid #DEDEDE;
     box-sizing: border-box;
-
-
     box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
 }
 
-.maintext_card{
+.maintext_card {
     margin: 30px 0;
     font-family: var(--text_font);
     font-style: normal;
@@ -473,55 +418,46 @@ div.scrollup {
     line-height: 33px;
     width: 100%;
     /* identical to box height, or 110% */
-
     letter-spacing: 0.1px;
-
     /* first text */
-
     color: #000000;
 }
 
-#text_sec_card{
+#text_sec_card {
     color: #FFFFFF;
 }
 
-#text_sec_card a{
+#text_sec_card a {
     color: #FFFFFF;
 }
 
-.text_card{
+.text_card {
     height: fit-content;
     width: 90%;
-
-    font-family:  var(--text_font);
+    font-family: var(--text_font);
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 27px;
     /* or 150% */
-
     letter-spacing: 0.2px;
-
     /* second text */
-
     color: #5C5C5C;
 }
 
-.button_learn{
-    font-family:var(--text_font);
+.button_learn {
+    font-family: var(--text_font);
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 27px;
-
     margin-top: 28px;
     letter-spacing: 0.2px;
-
     color: #03D6F3;
     text-decoration: none;
 }
 
-.button_learn a{
+.button_learn a {
     text-decoration: none;
     color: #03D6F3;
     transition-duration: 0.4s;
@@ -530,36 +466,37 @@ div.scrollup {
 
 
 /*Третий блок..............................................................................................................*/
-/*Третий блок..............................................................................................................*/
+
+
 /*Третий блок..............................................................................................................*/
 
-.container_3{
+
+/*Третий блок..............................................................................................................*/
+
+.container_3 {
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
     padding: 50px 0px;
-
     position: static;
     width: 100vw;
-    height:fit-content;
-
+    height: fit-content;
     background: #FFFFFF;
 }
 
-.content_3{
+.content_3 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-
     width: 1120px;
     max-width: 95vw;
-    height:fit-content;
+    height: fit-content;
 }
 
-.text_content_3{
+.text_content_3 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -568,7 +505,7 @@ div.scrollup {
     height: fit-content;
 }
 
-.main_text_3{
+.main_text_3 {
     font-family: var(--text_font);
     font-style: normal;
     font-weight: 500;
@@ -578,30 +515,27 @@ div.scrollup {
     max-width: 80vw;
     align-self: center;
     /* identical to box height, or 124% */
-
     letter-spacing: 0.2px;
-
     /* first text */
-
     color: #000000;
 }
 
-.screen_3{
+.screen_3 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: fit-content;
-    height:fit-content;
+    height: fit-content;
 }
 
-.screen_3 img{
+.screen_3 img {
     filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
     border-radius: 5px;
     width: 536px;
     max-width: 95vw;
 }
 
-.text_3{
+.text_3 {
     font-family: var(--text_font);
     font-style: normal;
     font-weight: bold;
@@ -609,33 +543,28 @@ div.scrollup {
     line-height: 20px;
     margin: 48px 10px 28px 10px;
     /* or 125% */
-
     letter-spacing: 0.2px;
-
     /* second text */
-
     color: #5C5C5C;
 }
 
-.buttons_3{
+.buttons_3 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 0px;
-
     width: 450px;
-    height:fit-content;
-
+    height: fit-content;
 }
 
-
-#button_3_1, #button_3_2{
+#button_3_1,
+#button_3_2 {
     width: 216px;
     height: 52px;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     font-family: var(--text_font);
     font-weight: 500;
     font-size: 16px;
@@ -643,71 +572,72 @@ div.scrollup {
     letter-spacing: 0.2px;
     box-sizing: border-box;
     /* shadow */
-
     filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
     border-radius: 39px;
     /* identical to box height, or 100% */
-
-
     /* light background */
-
     transition-duration: 0.4s;
     cursor: pointer;
 }
 
-#button_3_1{
+#button_3_1 {
     background: #03D6F3;
-    border: 1px solid #03D6F3;;
+    border: 1px solid #03D6F3;
+    ;
     color: white;
 }
-#button_3_2{
+
+#button_3_2 {
     background: #FFFFFF;
     border: 1px solid #30D7BA;
     color: #30D7BA;
 }
 
-#button_3_1:hover{
+#button_3_1:hover {
     filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.4));
 }
 
-#button_3_2:hover{
+#button_3_2:hover {
     background: #30D7BA;
     color: white;
     filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.4));
 }
 
-.buttons_3_copy{
+.buttons_3_copy {
     display: none;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding: 8px;
     margin-top: 64px;
     width: 440px;
     max-width: 100%;
-    height:fit-content;
+    height: fit-content;
 }
 
 
-
-/*Четвертый блок///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*Четвертый блок..............................................................................................................*/
-/*Четвертый блок..............................................................................................................*/
 /*Четвертый блок///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
+/*Четвертый блок..............................................................................................................*/
 
-#button_4{
+
+/*Четвертый блок..............................................................................................................*/
+
+
+/*Четвертый блок///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#button_4 {
     background: #03D6F3;
-    border: 1px solid #03D6F3;;
+    border: 1px solid #03D6F3;
+    ;
     color: white;
-
     width: 144px;
     max-width: 90vw;
     height: 52px;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     font-family: var(--text_font);
     font-weight: 500;
     font-size: 16px;
@@ -715,23 +645,19 @@ div.scrollup {
     letter-spacing: 0.2px;
     box-sizing: border-box;
     /* shadow */
-
     filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.2));
     border-radius: 39px;
     /* identical to box height, or 100% */
-
-
     /* light background */
-
     transition-duration: 0.4s;
     cursor: pointer;
 }
 
-#button_4:hover{
+#button_4:hover {
     filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.4));
 }
 
-.button_learn_4{
+.button_learn_4 {
     display: none;
     margin-left: 10px;
     font-family: var(--text_font);
@@ -740,15 +666,12 @@ div.scrollup {
     font-size: 15px;
     line-height: 27px;
     /* identical to box height, or 180% */
-
     letter-spacing: 0.2px;
-
     /* first text */
-
     color: #000000;
 }
 
-.button_learn_4 a{
+.button_learn_4 a {
     text-decoration: none;
     color: #000000;
     transition-duration: 0.4s;
@@ -756,53 +679,56 @@ div.scrollup {
     margin-bottom: 48px;
 }
 
-.button_learn_4 a:hover{
+.button_learn_4 a:hover {
     color: #03D6F3;
 }
 
-#text_content_4{
+#text_content_4 {
     width: 544px;
     max-width: 75vw;
 }
 
-#text_4{
+#text_4 {
     display: none;
 }
 
 
-
-
-
-
 /*Пятый блок/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
 /*..................................................................................................................................*/
+
+
 /*....................................................................................................................................*/
+
+
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-#screen_5{
+#screen_5 {
     height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#screen_5 img{
+
+#screen_5 img {
     filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
     border-radius: 5px;
-
     width: 760px;
     max-width: 95vw;
 }
 
-#content_5{
+#content_5 {
     width: 1240px;
     max-width: 95vw;
 }
-#text_content_5{
+
+#text_content_5 {
     padding-bottom: 64px;
     width: 35%;
 }
 
-#text_5{
+#text_5 {
     font-family: var(--text_font);
     font-style: normal;
     font-weight: normal;
@@ -815,16 +741,18 @@ div.scrollup {
     overflow: hidden;
 }
 
-#text_5_copy{
-    display:none;
+#text_5_copy {
+    display: none;
 }
-#button_5_1, #button_5_2{
+
+#button_5_1,
+#button_5_2 {
     width: 292px;
     max-width: 95vw;
     height: 76px;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     font-family: var(--text_font);
     font-weight: 500;
     font-size: 16px;
@@ -832,35 +760,33 @@ div.scrollup {
     letter-spacing: 0.2px;
     box-sizing: border-box;
     /* shadow */
-
     filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
     border-radius: 39px;
     /* identical to box height, or 100% */
-
-
     /* light background */
-
     transition-duration: 0.4s;
     cursor: pointer;
 }
 
-#button_5_1{
+#button_5_1 {
     background: #03D6F3;
-    border: 1px solid #03D6F3;;
+    border: 1px solid #03D6F3;
+    ;
     color: white;
     margin-bottom: 12px;
 }
-#button_5_2{
+
+#button_5_2 {
     background: #FFFFFF;
     border: 1px solid #30D7BA;
     color: #30D7BA;
 }
 
-#button_5_1:hover{
+#button_5_1:hover {
     filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.4));
 }
 
-#button_5_2:hover{
+#button_5_2:hover {
     background: #30D7BA;
     color: white;
     filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.4));
@@ -868,20 +794,26 @@ div.scrollup {
 
 
 /*Шестой блок/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
 /*..................................................................................................................................*/
+
+
 /*....................................................................................................................................*/
+
+
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-#container_6{
+
+#container_6 {
     padding-top: 50px;
 }
 
-#content_6{
+#content_6 {
     width: 1072px;
     padding: 0;
 }
 
-
-.text_6{
+.text_6 {
     font-family: var(--text_font);
     font-style: normal;
     font-weight: 400;
@@ -890,30 +822,25 @@ div.scrollup {
     max-width: 60vw;
     margin-top: 28px;
     /* identical to box height, or 150% */
-
     text-align: center;
     letter-spacing: 0.2px;
-
     /* second text */
-
     color: #5C5C5C;
 }
 
-#card_6{
+#card_6 {
     align-items: center;
     padding: 40px 0;
     width: 336px;
-    box-shadow:none
-
+    box-shadow: none
 }
 
-#maintext_card_6{
+#maintext_card_6 {
     text-align: center;
     margin: 8px 0 28px 0;
-
 }
 
-#maintext_card_6 p{
+#maintext_card_6 p {
     margin-top: 8px;
     font-family: var(--text_font);
     font-style: normal;
@@ -921,27 +848,23 @@ div.scrollup {
     font-size: 12px;
     line-height: 18px;
     /* identical to box height, or 150% */
-
     letter-spacing: 0.1px;
-
     /* second text */
-
     color: #5C5C5C;
 }
 
-.row_card{
+.row_card {
     margin: 28px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 0px;
-
-    width:fit-content;
+    width: fit-content;
     height: 64px;
 }
 
-.row_card p{
+.row_card p {
     font-family: var(--text_font);
     font-style: normal;
     font-weight: 900;
@@ -949,15 +872,12 @@ div.scrollup {
     line-height: 66px;
     margin-right: 8px;
     /* identical to box height, or 119% */
-
     letter-spacing: 0.2px;
-
     /* primary */
-
     color: #30D7BA;
 }
 
-.block_row{
+.block_row {
     align-self: flex-end;
     display: flex;
     flex-direction: column;
@@ -967,18 +887,15 @@ div.scrollup {
     padding: 0;
 }
 
-.block_row p{
+.block_row p {
     font-family: var(--text_font);
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
     line-height: 33px;
     /* identical to box height, or 110% */
-
     letter-spacing: 0.1px;
-
     /* primary */
-
     color: #30D7BA;
 }
 
@@ -989,16 +906,12 @@ div.scrollup {
     font-size: 12px;
     line-height: 18px;
     /* identical to box height, or 150% */
-
     letter-spacing: 0.1px;
-
     /* second text */
-
     color: #5C5C5C;
 }
 
-
-.text_card p{
+.text_card p {
     align-self: center;
     margin: 10px;
     font-family: var(--text_font);
@@ -1007,15 +920,12 @@ div.scrollup {
     font-size: 15px;
     line-height: 27px;
     /* identical to box height, or 180% */
-
     letter-spacing: 0.2px;
-
     /* first text */
-
     color: #000000;
 }
 
-#text_card_6{
+#text_card_6 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1023,11 +933,11 @@ div.scrollup {
     margin-bottom: 40px;
 }
 
-.button_card_6 #button__get_st{
+.button_card_6 #button__get_st {
     width: 252px;
     height: 52px;
     background: #03D6F3;
-    border:#03D6F3;
+    border: #03D6F3;
     color: white;
     padding: 0;
     margin: 0;
@@ -1035,15 +945,18 @@ div.scrollup {
 }
 
 
-
-
-
 /*Седьмой блок/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
 /*..................................................................................................................................*/
+
+
 /*....................................................................................................................................*/
+
+
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-.container_7{
+.container_7 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1055,98 +968,90 @@ div.scrollup {
     border-top: 1px solid #CDCDCD;
 }
 
-.content_7{
+.content_7 {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 64px 0;
     height: fit-content;
     max-width: 95vw;
-
 }
 
-.mail{
+.mail {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
-
-    width:fit-content;
+    width: fit-content;
     max-width: 100%;
-    height:fit-content;
-
+    height: fit-content;
     margin-top: 64px;
-
 }
-
-
 
 .text-field {
     height: 100%;
     width: 284px;
 }
 
-  .text-field__input {
+.text-field__input {
     display: block;
     width: 100%;
     height: 100%;
     padding: 14px 28px;
-
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
     line-height: 24px;
     /* identical to box height, or 160% */
-
     letter-spacing: 0.2px;
-
     /* second text */
-
     color: #5C5C5C;
-
-
     background: #EFEFEF;
     border: 1px solid #D0D0D0;
     box-sizing: border-box;
     border-radius: 6px;
-
-
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  }
+}
 
-  .text-field__input::placeholder {
+.text-field__input::placeholder {
     color: #212529;
     opacity: 0.7;
-  }
+}
 
-  .text-field__input:focus {
+.text-field__input:focus {
     color: #212529;
     background-color: #fff;
     border-color: #bdbdbd;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
-  }
+}
 
-  .text-field__input:disabled,
-  .text-field__input[readonly] {
+.text-field__input:disabled,
+.text-field__input[readonly] {
     background-color: #f5f5f5;
     opacity: 1;
-  }
+}
 
-  .subscribe #button__get_st{
-      margin-left: 8px;
-      background: #03D6F3;
-      color: #FFFFFF;
-      border: #03D6F3;
-  }
+.subscribe #button__get_st {
+    margin-left: 8px;
+    background: #03D6F3;
+    color: #FFFFFF;
+    border: #03D6F3;
+}
 
-  /*Восьмой блок/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*Восьмой блок/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
 /*..................................................................................................................................*/
+
+
 /*....................................................................................................................................*/
+
+
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-
-.container_8{
+.container_8 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1154,35 +1059,33 @@ div.scrollup {
     overflow: hidden;
     width: 100vw;
     height: fit-content;
-
     padding: 64px 0;
     background: #112D57;
 }
 
-.content_8{
+.content_8 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 8px;
-
     width: 1134px;
     max-width: 95vw;
-    height:fit-content;
-}
-
-.column_8_1{
-    max-width: 90vw;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: space-between;
-    padding: 0px;
-    width:fit-content;
     height: fit-content;
 }
 
-.row_in_column{
+.column_8_1 {
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.row_in_column {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1192,14 +1095,15 @@ div.scrollup {
     padding: 0px;
 }
 
-.list_in_row{
+.list_in_row {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding: 0px;
 }
-.list_in_row p{
+
+.list_in_row p {
     margin: 10px 0;
     font-family: var(--text_font);
     font-style: normal;
@@ -1207,15 +1111,12 @@ div.scrollup {
     font-size: 15px;
     line-height: 27px;
     /* identical to box height, or 180% */
-
     letter-spacing: 0.2px;
-
     /* light text */
-
     color: #FFFFFF;
 }
 
-#end_text{
+#end_text {
     font-family: var(--text_font);
     font-style: normal;
     font-weight: bold;
@@ -1230,63 +1131,61 @@ div.scrollup {
     color: #FFFFFF;
 }
 
-.block_in_column{
+.block_in_column {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
 }
 
-.vector_8{
-    position:relative;
+.vector_8 {
+    position: relative;
     left: 0%;
     right: 0%;
     top: 0%;
-    width:36px;
-    height:40px;
+    width: 36px;
+    height: 40px;
 }
 
-#img_1{
+#img_1 {
     position: absolute;
     left: 0;
     top: 0;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 }
 
-#img_2{
+#img_2 {
     position: absolute;
     width: 55%;
     left: 23%;
     top: 20%;
 }
 
-.block_in_column p{
+.block_in_column p {
     font-family: var(--text_font);
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 27px;
-    margin-left: 16px ;
+    margin-left: 16px;
     /* identical to box height, or 180% */
-
     letter-spacing: 0.2px;
-
     /* light text */
-
     color: #FFFFFF;
 }
 
-.column_8_2 img{
+.column_8_2 img {
     max-width: 90vw;
 }
 
-a#connect{
-    display:inline-block;
+a#connect {
+    display: inline-block;
     margin: 25px 8px 0px 0px;
     transition: .3s ease-in-out;
- }
- a#connect:hover {
+}
+
+a#connect:hover {
     filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.5));
- }
+}
