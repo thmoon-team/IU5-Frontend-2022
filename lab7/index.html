@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lab7</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <section class='weather__section'>
+            <div class='container weather'>
+                <div>
+                    <h1>Погода</h1>
+                </div>
+                <div class='weather-content'>
+                    <div class='weather-content-search'>
+                        <form class='form-weather' id="form_weather">
+                            <input
+                                type="text"
+                                class="form-control form-weather-input"
+                                placeholder='Введите город...'
+                                id="weather_input"
+                            />
+                            <input
+                                type='submit'
+                                class='btn'
+                                value='Посмотреть погоду'
+                            />
+                        </form>
+                    </div>
+
+                    <div class='weather-content-data'>
+                        <h2 id="city_name"></h2>
+                        <div class="weather__disc" id="weather_description"></div>
+                        <ul class="list-group">
+                            <li
+                                class="list-group-item weather-item"
+                            >
+                                <span>Температура</span>
+                                <span><span id="weather_temp"></span> °С</span>
+                            </li>
+                            <li
+                                class="list-group-item weather-item"
+                            >
+                                <span>Oщущается как</span>
+                                <span><span id="weather_temp_like"></span> °С</span>
+                            </li>
+                            <li
+                                class="list-group-item weather-item"
+                            >
+                                <span>Давление</span>
+                                <span><span id="weather_temp_pressure"></span> мм рт.ст.</span>
+                            </li>
+                            <li
+                                class="list-group-item weather-item"
+                            >
+                                <span>Скорость ветра</span>
+                                <span><span id="weather_wind"></span> м/с</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            const API_WEATHER_TOKEN = '84422e91a95dd6673b697c02a3eba9fe'
+            const URL = 'https://api.openweathermap.org/data/2.5/weather'
+
+            const form = document.getElementById('form_weather')
+
+            form.addEventListener('submit', event => {
+                event.preventDefault()
+
+                const city = document.getElementById('weather_input').value
+                getWeatherByName(city)
+            })
+
+            const getWeatherByName = name => {
+                try {
+                    fetch(`${URL}?q=${name}&appid=${API_WEATHER_TOKEN}&units=metric&lang=RU`)
+                    .then(res => res.json())
+                    .then(data => handle(data))
+                } catch(error) {
+                    console.log(error.message)
+                }
+            }
+
+            const getWeatherByLocation = (lat, lon) => {
+                try {
+                    fetch(`${URL}?lat=${lat}&lon=${lon}&appid=${API_WEATHER_TOKEN}&units=metric&lang=RU`)
+                    .then(res => res.json())
+                    .then(data => handle(data))
+                } catch(eroor) {
+                    console.log(error.message)
+                }
+            }
+
+            const handle = res => {
+                const weather = {
+                    city: res.name,
+                    temp: Math.round(Number(res.main.temp)),
+                    tempFeelsLike: Math.round(Number(res.main.feels_like)),
+                    wind: res.wind.speed,
+                    description: res.weather[0].description,
+                    pressure: Math.round(Number(res.main.pressure) * 0.75)
+                }
+
+                document.getElementById('city_name').innerText = weather.city
+                document.getElementById('weather_description').innerText = weather.description
+                document.getElementById('weather_temp').innerText = weather.temp
+                document.getElementById('weather_temp_like').innerText = weather.tempFeelsLike
+                document.getElementById('weather_temp_pressure').innerText = weather.pressure
+                document.getElementById('weather_wind').innerText = weather.wind
+
+                document.getElementById('weather_input').value = ''
+            }
+
+            window.onload = () => {
+                const geo = navigator.geolocation
+
+                geo.getCurrentPosition(props => {
+                    getWeatherByLocation(props.coords.latitude, props.coords.longitude)
+                })
+            }
+
+        </script>
+    </body>
+</html>

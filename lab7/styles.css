@@ -1,0 +1,151 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+	'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+	sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.btn {
+	cursor: pointer;
+}
+
+.form {
+	margin: 4rem auto;
+}
+
+.form-weather {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.form-weather-input {
+	width: 60%
+}
+
+.form-weather-input,
+.form-weather .btn {
+	border: 0;
+	padding: 10px 15px;
+	border-radius: 10px;
+	box-shadow: 2px 5px 10px #c4c4c4;
+}
+  
+.form-weather h1 {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+  
+.form__container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.form__container input {
+	width: 65%;
+}
+
+.list-group {
+	list-style: none;
+}
+
+.list-group-item {
+	display: flex;
+	list-style-position: outside;
+	justify-content: space-between;
+	align-items: baseline;
+	margin: 15px 0;
+}
+
+.weather__section {
+	background-color: #ECEF4E;
+	width: 100%;
+	opacity: .66;
+	height: 100vh;
+}
+
+.weather {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	opacity: .66;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	padding: 3rem;
+}
+  
+.weather-item {
+	border-radius: 5px;
+}
+  
+.weather-content {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	color: #fff;
+	margin-top: 40px;
+}
+
+.weather-content-search {
+	width: 50%;
+	margin-bottom: 40px;
+}
+  
+.weather-content-data {
+	width: 55%;
+	padding: 1rem 3rem;
+	background-color: #0013ff;
+	border-radius: 10px;
+}
+
+.weather-content-data h2,
+.weather-content-data .weather__disc {
+	margin-bottom: 10px;
+	text-align: right;
+}
+
+@media screen and (max-width: 992px) {
+
+	.weather {
+		padding: 3rem 10px;
+	}
+
+	.form-weather {
+		flex-direction: column;
+	}
+
+	.form-weather-input {
+		width: 90%;
+		margin-bottom: 30px;
+	}
+
+	.weather-content-data {
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 545px) {
+	.form-weather {
+		width: 100%;
+	}
+
+	.weather-content-data {
+		padding: 1rem 10px;
+		width: 100%;
+	}
+}
