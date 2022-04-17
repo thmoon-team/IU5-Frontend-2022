@@ -17,8 +17,8 @@
         "test-lab-3": "jest lab3.test.js",
         "test-lab-4": "jest lab4.test.js",
         "test-lab-5": "jest lab5.test.js",
-        "build": "cd lab8 && npm run build",
-        "vercel-install": "npm install --only=production && cd lab8/ && npm i"
+        "build": "cd lab8 && npm run build && cd ../lab9 && npm run build",
+        "vercel-install": "npm install --only=production && cd lab8/ && npm i && cd ../lab9/ && npm i"
     },
     "author": "",
     "license": "ISC"
