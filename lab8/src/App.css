@@ -1,38 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+body {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    background-color: white;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    width: 1000px;
+    height: 1000px;
+    max-width: 95vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button-add {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding-right: 20px;
+    border: 2px solid rgb(67, 176, 92);
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(67, 176, 92);
+    cursor: pointer;
+
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 1.05rem;
+
+    transition-duration: 0.5s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.button-add:hover {
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2));
 }
 
-.App-link {
-  color: #61dafb;
+.task-item {
+    font-family: "Ubuntu", sans-serif;
+    width: 332px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 14px 32px 14px 16px;
+    border-radius: 8px;
+    border: 2px solid rgb(67, 176, 92);
+    outline: none;
+    background: transparent;
+}
+.task-text {
+    color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.strike {
+    color: darkgray;
+    text-decoration: line-through;
+}
+
+.task-input {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 5px 0;
+    padding: 14px 32px 14px 16px;
+    border-radius: 8px 0 0 8px;
+    border: 2px solid rgb(67, 176, 92);
+    outline: none;
+    background: transparent;
+}
+
+.task-button {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 16px 7px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    outline: none;
+    background: rgb(67, 176, 92);
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.item-delete{
+    height: 30px;
 }
