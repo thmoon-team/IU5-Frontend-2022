@@ -4,9 +4,32 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css">
         <title>Lab7</title>
     </head>
     <body>
-
+        <div class="wrapper">
+            <div class="headr">
+                <h1>Прогноз погоды</h1> 
+                <div class="Search">
+                    <div id="city_name"></div>
+                    <div id="icon"> </div>
+                    <input class="input" id="city" type="text" size="50" placeholder="Ведите город, чтобы узнать погоду">
+                    <button id="button"> Найти </button>
+                </div>
+            </div>
+            <div class="Main">
+                <div class="Text">
+                    <div id="temp"></div>         
+                    <div id="feel"></div>
+                    <div id="descr"></div>
+                    <div id="wind"></div>
+                    <div id="pres"></div>
+                    <div id="hum"> </div>
+                </div>
+            </div>
+                
+        </div>
     </body>
+    <script src="script.js"></script>
 </html>
