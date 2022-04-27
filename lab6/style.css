@@ -1,0 +1,56 @@
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(120, 120, 187);
+}
+
+.count{
+    margin-top: 30px;
+    text-align: center;
+    height: 100px;
+    background-color: rgb(120, 120, 187);
+}
+
+.animals{
+    margin-top: 30px;
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    border-radius: 39px;
+    background-color: rgb(120, 120, 187);
+}
+
+ .list{
+    display: none;
+ }
+
+.list-block{
+    display: block;
+    background-color: rgb(120, 120, 187);
+    height: auto;
+    width: 100px;
+    margin-top: 5px;
+    border-radius: 40px;
+    text-align: center;
+    text-decoration: none;
+
+}
+ul {
+    background-color: antiquewhite;
+}
+
+.field{
+    position: relative;
+    margin-top: 30px;
+    width: 800px;
+    height: 800px;
+    background-color: rgb(120, 120, 187);
+}
+
+.circle{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: white;
+}
